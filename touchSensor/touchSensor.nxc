@@ -1,0 +1,16 @@
+
+
+task main(){
+
+	SetSensorTouch(IN_1);
+	SetSensorTouch(IN_2);
+	while(true){
+		if(Sensor(IN_1) == 1 || Sensor(IN_2) == 1){
+			TextOut(0,0,"Sensor tocou!");
+		}
+		else{
+			TextOut(0,0,"Sensor nao tocou!");			
+		}
+	}
+}
+
