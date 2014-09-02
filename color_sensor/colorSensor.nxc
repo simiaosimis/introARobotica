@@ -1,0 +1,63 @@
+// shooterbot_2.nxc
+// Move forward to the red line, turn around, and move back to the start
+// position.
+// Adjust this number to suit your surface / battery power
+
+//#define TURN_TIME 1750
+
+#define COLORSENSOR SENSOR_2
+task main ()
+{
+
+
+
+	while(true){
+		SetSensorColorFull(IN_2);
+		Wait(300);
+		ClearScreen();
+		
+		NumOut(0,0,COLORSENSOR);
+
+		unsigned int valRed = ColorSensorValue(IN_2, INPUT_RED);
+		unsigned int valGreen = ColorSensorValue(IN_2, INPUT_GREEN);
+		unsigned int valBlue = ColorSensorValue(IN_2, INPUT_BLUE);
+
+		NumOut(0, LCD_LINE1,valRed);
+		NumOut(0, LCD_LINE2,valGreen);
+		NumOut(0, LCD_LINE3,valBlue);
+
+	
+	}
+
+
+/*	long t0, t1;*/
+/*	// Bring the color sensor on-line*/
+/*	SetSensorColorFull (S3);*/
+
+
+/*	while(1){*/
+/*		unsigned int valRed = ColorSensorValue(S3, INPUT_RED);*/
+/*		unsigned int valGreen = ColorSensorValue(S3, INPUT_GREEN);*/
+/*		unsigned int valBlue = ColorSensorValue(S3, INPUT_BLUE);*/
+
+/*		NumOut(0, LCD_LINE1,valRed);*/
+/*		NumOut(0, LCD_LINE2,valGreen);*/
+/*		NumOut(0, LCD_LINE3,valBlue);*/
+
+/*		Wait(1000);		*/
+/*	}*/
+
+/*	// Record the time when the forward movement starts*/
+/*	t0 = CurrentTick ();*/
+/*	// Move forward to the red line*/
+/*	OnFwd (OUT_BC ,75);*/
+/*	until (INPUT_REDCOLOR == SENSOR_3);*/
+/*	t1 = CurrentTick (); // Record the time when the forward movement finishes*/
+/*	Off (OUT_BC);*/
+/*	// Turn 180 degrees to the right*/
+/*	OnFwd (OUT_C, 75); OnRev (OUT_B, 75); Wait (TURN_TIME); Off (OUT_BC);*/
+/*	// Move back to the start*/
+/*	OnFwd (OUT_BC ,75); Wait (t1 - t0); Off (OUT_BC);
+*/
+
+}
