@@ -8,7 +8,12 @@ struct color{
 	unsigned long b;
 };
 
-int setUpTouchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
-void touchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
-color colorSensor(const byte &port, unsigned long waitTime);
+struct sensor{
+	int isSet;
+	int isTouching;
+};
+
+//int setUpTouchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
+//void touchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
+//color colorSensor(const byte &port, unsigned long waitTime);
 #endif
