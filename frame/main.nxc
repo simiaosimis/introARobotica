@@ -1,7 +1,18 @@
-#include "sensor.h"
+#include "sensor.nxc"
 
 task main(){
+
+	sensor sensor1;
+	sensor sensor2;	
+
+	while(1){
 	
+/*		colorSensor(IN_4, 500);*/
+		touchSensor(IN_1,IN_2,2,sensor1, sensor2);
+		NumOut(0, LCD_LINE1,sensor1.isTouching);
+		NumOut(0, LCD_LINE2,sensor2.isTouching);
+
+	}
 	
 }
 
