@@ -16,8 +16,9 @@ task main ()
 		Wait(300);
 		ClearScreen();
 		
-		NumOut(0,0,COLORSENSOR);
-
+//		NumOut(0,0,COLORSENSOR);
+		NumOut(0,0,IN_2);
+		
 		unsigned int valRed = ColorSensorValue(IN_2, INPUT_RED);
 		unsigned int valGreen = ColorSensorValue(IN_2, INPUT_GREEN);
 		unsigned int valBlue = ColorSensorValue(IN_2, INPUT_BLUE);
