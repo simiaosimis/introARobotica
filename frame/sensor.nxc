@@ -44,16 +44,16 @@ void touchSensor(const byte &port1,const byte &port2,int qtd,sensor &sensor1, se
 		TextOut(0,0,"Sensor 1 tocando!");
 		// implementar o que quiser aqui, mudar retorno caso precise
 		sensor1.isTouching = 1;
-	}else if(Sensor(port2) == 1){
+	}else{
+		sensor1.isTouching = 0;	
+	}
+
+	if(Sensor(port2) == 1){
 		TextOut(0,0,"Sensor 2 tocando!");
 		sensor2.isTouching=1;
 	}else{
-		TextOut(0,0,"Sensor nao tocou!");
-		// implementar o que quiser aqui
-		sensor1.isTouching = 0;
 		sensor2.isTouching = 0;
 	}
-
 
 }
 
