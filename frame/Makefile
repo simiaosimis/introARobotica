@@ -1,6 +1,5 @@
 download:
-	nbc -d -S=usb main.nxc sensor.c
+	nbc -d -S=usb main.nxc
 
 compile:
-	nbc -O=frame main.nxc sensor.c
-
+	nbc -O=frame main.nxc 
