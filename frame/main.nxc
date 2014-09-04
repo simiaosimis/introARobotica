@@ -1,18 +1,37 @@
 #include "sensor.nxc"
 
-task main(){
 
+task taskColorSensor(){
+/*		colorSensor(IN_4, 500);*/
+
+}
+
+task escapeTaskWork(){
+
+	TextOut(0,0,"Saindo de task");
+	
+}
+
+task taskTouchSensor(){
+	
 	sensor sensor1;
 	sensor sensor2;	
 
+	setUpTouchSensor(IN_1,IN_2);
+
 	while(1){
 	
-/*		colorSensor(IN_4, 500);*/
-		touchSensor(IN_1,IN_2,2,sensor1, sensor2);
+		touchSensor(IN_1,IN_2,sensor1, sensor2);
 		NumOut(0, LCD_LINE1,sensor1.isTouching);
 		NumOut(0, LCD_LINE2,sensor2.isTouching);
 
 	}
-	
+
+}
+
+task main(){
+
+	Precedes(taskTouchSensor);
+
 }
 
