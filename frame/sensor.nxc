@@ -1,8 +1,4 @@
-
-// Fazer retirada das bibliotecas acima
 #include "sensor.h"
-
-
 
 void setUpTouchSensor(const byte &port1, const byte &port2){
 
@@ -31,7 +27,6 @@ void touchSensor(const byte &port1,const byte &port2,sensor &sensor1, sensor &se
 	
 	if(sensor1.isTouching == 0 && sensor2.isTouching == 0){
 		ClearScreen();
-
 	}
 
 }

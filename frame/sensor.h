@@ -13,7 +13,7 @@ struct sensor{
 	int isTouching;
 };
 
-//int setUpTouchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
-//void touchSensor(const byte &port1,const byte &port2,int qtd,int &resultSensor1, int &resultSensor2);
-//color colorSensor(const byte &port, unsigned long waitTime);
+void setUpTouchSensor(const byte &port1, const byte &port2);
+void touchSensor(const byte &port1,const byte &port2,sensor &sensor1, sensor &sensor2);
+color colorSensor(const byte &port, unsigned long waitTime);
 #endif

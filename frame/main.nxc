@@ -1,8 +1,8 @@
 #include "sensor.nxc"
-
+#include "move.nxc"
 
 task taskColorSensor(){
-/*		colorSensor(IN_4, 500);*/
+	colorSensor(IN_4, 500);
 
 }
 
@@ -29,9 +29,15 @@ task taskTouchSensor(){
 
 }
 
+task move(){
+	goAhead(2000);
+	turnLeft(180);
+	mustStop();
+}
+
 task main(){
 
-	Precedes(taskTouchSensor);
+	Precedes(move, taskTouchSensor);
 
 }
 
