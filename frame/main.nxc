@@ -30,13 +30,16 @@ task taskTouchSensor(){
 }
 
 task move(){
-	goAhead(2000);
-	turnLeft(180);
+	goAhead(57);
+	turnLeft(90);
+	goAhead(45);
 	mustStop();
 }
 
 task main(){
-
+	// tamanho esteira: 13cm
+	// Tamanho robo : 22cm
+	
 	Precedes(move, taskTouchSensor);
 
 }

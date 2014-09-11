@@ -1,20 +1,25 @@
 
-#define POTENCY 50
+#define POTENCY 75
 
 void goAhead(unsigned int distance){
+
 	OnFwd(OUT_AC, POTENCY);
 	TextOut(0,0,"Andando pra frente");
-	Wait(distance);
-	TextOut(0,0,"Andando pra frente 2");
+	float factor = 2000 / 30.5;
+	Wait(distance * factor);
+
 }
 
 void goBack(unsigned int distance){
+	
 	OnRev(OUT_AC, POTENCY);
-	Wait(distance);
-		TextOut(0,0,"Andando pra tras");
+	TextOut(0,0,"Andando pra tras");
+	float factor = 2000 / 30.5;
+	Wait(distance * factor);
+
 }
 
-void turnLeft(unsigned int angle){
+void turnRight(unsigned int angle){
 	OnFwd(OUT_C, POTENCY);
 	OnRev(OUT_A, POTENCY);
 	float factor = 1200 / 90;
@@ -22,15 +27,19 @@ void turnLeft(unsigned int angle){
 	TextOut(0,0,"Girando pra esquerda");
 }
 
-void mustStop(){
-	Off(OUT_AC);
-}
+void turnLeft(unsigned int angle){
 
-void turnRight(unsigned int angle){
 	OnFwd(OUT_A, POTENCY);
 	OnRev(OUT_C, POTENCY);
 	float factor = 1200 / 90;
 	Wait(angle * factor);
 	TextOut(0,0,"Girando pra direita");
+
+}
+
+void mustStop(){
+
+	Off(OUT_AC);
+
 }
 
