@@ -1,0 +1,29 @@
+#define POTENCY_CLAW 75
+
+void moveUp(unsigned int angle){
+
+     // OUT_B should be the engine with the claw
+     OnRev(OUT_B, POTENCY_CLAW);
+     TextOut(0,0,"Girando para cima");
+     float factor = 160/75;
+     Wait(angle * factor);
+
+}
+
+void moveDown(unsigned int angle){
+
+     // OUT_B should be the engine with the claw
+     OnFwd(OUT_B, POTENCY_CLAW);
+     TextOut(0,0,"Girando para baixo");
+     float factor = 160/75;
+     Wait(angle * factor);
+
+}
+
+void mustStopClaw(){
+
+	Off(OUT_B);
+
+}
+
+
