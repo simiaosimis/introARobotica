@@ -38,14 +38,7 @@ task move(){
      mustStopClaw();
      goBack(65);
      mustStop();
-	//goAhead(61);
-	//turnLeft(95);
-	//goAhead(75);
-	//turnRight(110);
-	//goAhead(100);
-	//turnLeft(14);
-	//goAhead(40);
-
+     
 }
 
 task main(){

@@ -32,11 +32,10 @@ task taskTouchSensor(){
 
 task move(){
 
-     goAhead(65);
+     goAhead(70);
      moveDown(90);
-     moveUp(90);
      mustStopClaw();
-     goBack(65);
+     goBack(75);
      mustStop();
      
 }
