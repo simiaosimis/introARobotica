@@ -34,15 +34,25 @@ task move(){
 
      goAhead(60);
 	 turnRight(45);
-	 goAhead(20);
+	 goAhead(25);
 	 turnLeft(90);
-	 goAhead(15);
- 	 turnLeft(90);
+	 goAhead(14);
+ 	 turnLeft(85);
 	 goBack(15);
-	 turnLeft(60);
-	 goAhead(80);
+	 turnLeft(70);
+	 goAhead(85);
      mustStop();
-     
+
+/*	while(1){*/
+/*		moveDown(60);*/
+/*		Wait(50);*/
+/*		mustStopClaw();*/
+/*		moveUp(60);*/
+/*		Wait(50);*/
+/*		mustStopClaw();*/
+/*	*/
+/*	}*/
+	
 }
 
 task main(){

@@ -1,0 +1,18 @@
+#include "sensor.nxc"
+#include "move.nxc"
+#include "claw.nxc"
+
+task main(){
+
+	goAhead(60);
+	turnRight(45);
+	goAhead(25);
+	turnLeft(90);
+	goAhead(14);
+ 	turnLeft(85);
+	goBack(15);
+	turnLeft(70);
+	goAhead(85);
+    mustStop();
+}
+
