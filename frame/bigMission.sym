@@ -1,0 +1,281 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_002goAhead	6	1	0	4	2
+1	__signed_stack_001turnLeft	6	1	4	4	2
+2	__signed_stack_002turnLeft	6	1	8	4	2
+3	__D0turnLeft	6	1	12	4	5
+4	__D0turnRight	6	1	16	4	5
+5	__signed_stack_001goAhead	6	1	20	4	2
+6	__Wait_7qG2_ms_7qG2_000_inline_goAhead	5	1	24	4	2
+7	__Wait_7qG2_ms_7qG2_000_inline_turnRight	5	1	28	4	2
+8	__Wait_7qG2_ms_7qG2_000_inline_turnLeft	5	1	32	4	2
+9	__signed_stack_001turnRight	6	1	36	4	2
+10	__signed_stack_002turnRight	6	1	40	4	2
+11	__constValf65P5737704918	10	0	44	4	1
+12	__D0goAhead	6	1	48	4	3
+13	__OnRevMutex	9	0	52	4	4
+14	__TextOutMutex	9	0	56	4	6
+15	__turnRight_7qG2_angle_7qG2_000	3	1	60	2	3
+16	__turnLeft_7qG2_angle_7qG2_000	3	1	62	2	2
+17	__goAhead_7qG2_distance_7qG2_000	3	1	64	2	5
+18	__constVal63	2	0	66	1	6
+19	__constVal32	2	0	67	1	18
+20	__mustStop_return	1	1	68	1	3
+21	____initialize_global_data_return	1	1	69	1	3
+22	__turnLeft_return	1	1	70	1	3
+23	__turnRight_return	1	1	71	1	4
+24	__OnRev_Tmp	2	1	72	1	4
+25	__constVal3	2	0	73	1	6
+26	__constVal2	2	0	74	1	2
+27	__constVal13	2	0	75	1	2
+28	__constVal0	2	1	76	1	21
+29	__constVal96	2	0	77	1	6
+30	__goAhead_return	1	1	78	1	6
+31	__TextOutArgs	8	0	4	16	18
+32	__TextOutArgs.Result	2	1	80	1	18
+33	__TextOutArgs.Location	8	0	2	4	18
+34	__TextOutArgs.Location.X	4	1	84	2	18
+35	__TextOutArgs.Location.Y	4	1	86	2	18
+36	__TextOutArgs.Text	7	0	88	4	18
+37	__TextOutArgs.Text.Text_type	1	0	0	1	0
+38	__TextOutArgs.Options	5	1	92	4	18
+39	__constStr0014	7	0	96	4	1
+40	__constStr0014.__constStr0014_type	1	1	0	1	0
+41	__strbufgoAhead	7	0	98	4	2
+42	__strbufgoAhead.__strbufgoAhead_type	1	0	0	1	0
+43	__strbufturnLeft	7	0	100	4	2
+44	__strbufturnLeft.__strbufturnLeft_type	1	0	0	1	0
+45	__OUT_AC	7	0	102	4	2
+46	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+47	__constStr0011	7	0	104	4	1
+48	__constStr0011.__constStr0011_type	1	1	0	1	0
+49	__constStr0013	7	0	106	4	1
+50	__constStr0013.__constStr0013_type	1	1	0	1	0
+51	__strbufturnRight	7	0	108	4	2
+52	__strbufturnRight.__strbufturnRight_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	6	0	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	7	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	6	2	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	6	2	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	7	2		set __goAhead_7qG2_distance_7qG2_000, 65
+0	6	5	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	7	5	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	8	5		subcall goAhead, __goAhead_return
+0	7	7	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	7	7	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	8	7		set __turnLeft_7qG2_angle_7qG2_000, 115
+0	7	10	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	8	10	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	9	10		subcall turnLeft, __turnLeft_return
+0	8	12	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	8	12	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	9	12		set __goAhead_7qG2_distance_7qG2_000, 90
+0	8	15	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	9	15	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	10	15		subcall goAhead, __goAhead_return
+0	9	17	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	9	17	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	10	17		set __turnRight_7qG2_angle_7qG2_000, 115
+0	9	20	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	10	20	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	11	20		subcall turnRight, __turnRight_return
+0	10	22	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	10	22	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	11	22		set __goAhead_7qG2_distance_7qG2_000, 90
+0	10	25	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	11	25	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	12	25		subcall goAhead, __goAhead_return
+0	11	27	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	11	27	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	12	27		set __turnRight_7qG2_angle_7qG2_000, 30
+0	11	30	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	12	30	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	30		subcall turnRight, __turnRight_return
+0	12	32	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	12	32	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	32		set __goAhead_7qG2_distance_7qG2_000, 80
+0	12	35	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	35	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	14	35		subcall goAhead, __goAhead_return
+0	13	37	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	37		subcall mustStop, __mustStop_return
+0	14	39	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	39		exit -1, -1
+1	5	0	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	6	0		set __D0goAhead, 75
+1	6	3	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	7	3	#pragma macro 7
+1	7	3		setout __OUT_AC, 2, __D0goAhead, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	7904	26	#line 7904 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	6	26	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	6	26	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	7	26		set __signed_stack_001goAhead, 0
+1	6	29	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	6	29	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	7	29		set __signed_stack_002goAhead, 0
+1	6	32	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	6	32	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	7	32		strcat __strbufgoAhead, __constStr0011
+1	7	36	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	36		acquire __TextOutMutex
+1	7	37	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	37		mov __TextOutArgs.Location.X, __signed_stack_001goAhead
+1	7	39	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	39		mov __TextOutArgs.Location.Y, __signed_stack_002goAhead
+1	7	41	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	41		set __TextOutArgs.Options, 0
+1	7	44	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	44		mov __TextOutArgs.Text, __strbufgoAhead
+1	7	46	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	46		syscall 13, __TextOutArgs
+1	7	49	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	49		mov __D0goAhead, __TextOutArgs.Result
+1	7	51	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	51		release __TextOutMutex
+1	7	52	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	8	52	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	9	52		mul __Wait_7qG2_ms_7qG2_000_inline_goAhead, __goAhead_7qG2_distance_7qG2_000, __constValf65P5737704918
+1	8	56	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	7921	56	#line 7921 "NXCDefs.h"
+1	7922	56		waitv __Wait_7qG2_ms_7qG2_000_inline_goAhead
+1	7921	58	#line 7921 "NXCDefs.h"
+1	10	58	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	12	58	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+1	13	58		subret __goAhead_return
+2	22	0	#line 22 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	23	0		set __D0turnRight, 75
+2	23	3	#line 23 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	24	3	#pragma macro 7
+2	24	3		setout __constVal2, 2, __D0turnRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	8058	26	#line 8058 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	23	26	#line 23 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	23	26	#line 23 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	24	26		set __D0turnRight, 75
+2	24	29	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	29	#pragma macro 10
+2	25	29		acquire __OnRevMutex
+2	25	30		neg __OnRev_Tmp, __D0turnRight
+2	25	33		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	25	56		release __OnRevMutex
+2	8065	57	#line 8065 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	24	57	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	25	57	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	26	57		mul __Wait_7qG2_ms_7qG2_000_inline_turnRight, __turnRight_7qG2_angle_7qG2_000, __constVal13
+2	25	61	#line 25 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	7921	61	#line 7921 "NXCDefs.h"
+2	7922	61		waitv __Wait_7qG2_ms_7qG2_000_inline_turnRight
+2	7921	63	#line 7921 "NXCDefs.h"
+2	26	63	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	26	63	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	27	63		set __signed_stack_001turnRight, 0
+2	26	66	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	26	66	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	27	66		set __signed_stack_002turnRight, 0
+2	26	69	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	26	69	#line 26 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	27	69		strcat __strbufturnRight, __constStr0013
+2	27	73	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	73		acquire __TextOutMutex
+2	27	74	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	74		mov __TextOutArgs.Location.X, __signed_stack_001turnRight
+2	27	76	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	76		mov __TextOutArgs.Location.Y, __signed_stack_002turnRight
+2	27	78	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	78		set __TextOutArgs.Options, 0
+2	27	81	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	81		mov __TextOutArgs.Text, __strbufturnRight
+2	27	83	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	83		syscall 13, __TextOutArgs
+2	27	86	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	86		mov __D0turnRight, __TextOutArgs.Result
+2	27	88	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	28	88		release __TextOutMutex
+2	27	89	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	29	89	#line 29 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+2	30	89		subret __turnRight_return
+3	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	32	0		set __D0turnLeft, 75
+3	32	3	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	33	3	#pragma macro 7
+3	33	3		setout __constVal0, 2, __D0turnLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	8142	26	#line 8142 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	32	26	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	32	26	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	33	26		set __D0turnLeft, 75
+3	33	29	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	29	#pragma macro 10
+3	34	29		acquire __OnRevMutex
+3	34	30		neg __OnRev_Tmp, __D0turnLeft
+3	34	33		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	34	56		release __OnRevMutex
+3	8149	57	#line 8149 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	33	57	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	34	57	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	35	57		mul __Wait_7qG2_ms_7qG2_000_inline_turnLeft, __turnLeft_7qG2_angle_7qG2_000, __constVal13
+3	34	61	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	7921	61	#line 7921 "NXCDefs.h"
+3	7922	61		waitv __Wait_7qG2_ms_7qG2_000_inline_turnLeft
+3	7921	63	#line 7921 "NXCDefs.h"
+3	35	63	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	35	63	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	36	63		set __signed_stack_001turnLeft, 0
+3	35	66	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	35	66	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	36	66		set __signed_stack_002turnLeft, 0
+3	35	69	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	35	69	#line 35 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	36	69		strcat __strbufturnLeft, __constStr0014
+3	37	73	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	73		acquire __TextOutMutex
+3	37	74	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	74		mov __TextOutArgs.Location.X, __signed_stack_001turnLeft
+3	37	76	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	76		mov __TextOutArgs.Location.Y, __signed_stack_002turnLeft
+3	37	78	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	78		set __TextOutArgs.Options, 0
+3	37	81	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	81		mov __TextOutArgs.Text, __strbufturnLeft
+3	37	83	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	83		syscall 13, __TextOutArgs
+3	37	86	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	86		mov __D0turnLeft, __TextOutArgs.Result
+3	37	88	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	38	88		release __TextOutMutex
+3	37	89	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	39	89	#line 39 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+3	40	89		subret __turnLeft_return
+4	43	0	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+4	44	0	#pragma macro 7
+4	44	0		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8218	23	#line 8218 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+4	43	23	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+4	44	23	#line 44 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc"
+4	45	23		subret __mustStop_return
+5	17	0	#line 17 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+5	18	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc
+1	goAhead	42	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+2	turnRight	102	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+3	turnLeft	193	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+4	mustStop	284	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+5	__initialize_global_data	309	C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc
