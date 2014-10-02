@@ -4,7 +4,7 @@
 
 task main(){
 
-	goAhead(64);
+	goAhead(62);
 	turnRight(45);
 	goAhead(25);
 	turnLeft(90);

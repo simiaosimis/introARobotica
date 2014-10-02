@@ -1,0 +1,7 @@
+#include "move.nxc"
+
+task main(){
+
+     turnRight(90);
+     mustStop();
+}

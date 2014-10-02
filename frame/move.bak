@@ -31,15 +31,15 @@ void goBack(unsigned int distance){
 
 void turnRight(unsigned int angle){
 	float factor = 360 / 63.5;
-	leftMotor(angle * factor );
-	rightMotor(angle * factor * (-1));
+	leftMotor(angle * factor * (-1));
+	rightMotor(angle * factor);
 	TextOut(0,0,"Girando pra direita");
 }
 
 void turnLeft(unsigned int angle){
 	float factor = 360 / 63.5;
-	leftMotor(angle * factor * (-1));
-	rightMotor(angle * factor );
+	leftMotor(angle * factor);
+	rightMotor(angle * factor * (-1));
 	TextOut(0,0,"Girando pra direita");
 }
 
