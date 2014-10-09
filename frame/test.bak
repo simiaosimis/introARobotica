@@ -2,6 +2,6 @@
 
 task main(){
 
-     turnRight(90);
-     
+     goAhead(360);
+     mustStop();
 }

@@ -9,38 +9,44 @@ void rightMotor(int angle){
       RotateMotor(OUT_C, POTENCY, angle);
 }
 
+void bothMotors(int angle){
+      RotateMotor(OUT_AC, POTENCY, angle);
+}
+
 void goAhead(unsigned int distance){
 
-	OnFwd(OUT_AC, POTENCY);
-	TextOut(0,0,"Andando pra frente");
 	//float factor = 2000 / 30.5; >>>> antigo
-  float factor = 2000 / 38;
-	Wait(distance * factor);
+  float factor = 360/10.75;
+	bothMotors(distance * factor);
+	TextOut(0,0,"Andando pra frente");
 
 }
 
 void goBack(unsigned int distance){
 	
-	OnRev(OUT_AC, POTENCY);
-	TextOut(0,0,"Andando pra tras");
- //float factor = 2000 / 30.5; >>>> antigo
-  float factor = 2000 / 38;
-	Wait(distance * factor);
+	//float factor = 2000 / 30.5; >>>> antigo
+  float factor = 360/10.75;
+	bothMotors( (-1) * distance * factor);
+	TextOut(0,0,"Andando pra traz");
 
 }
 
 void turnRight(unsigned int angle){
-	float factor = 360 / 63.5;
-	leftMotor(angle * factor );
-	rightMotor(angle * factor * (-1));
-	TextOut(0,0,"Girando pra direita");
+	OnFwd(OUT_C, POTENCY);
+	OnRev(OUT_A, POTENCY);
+	float factor = 1200 / 90;
+	Wait(angle * factor);
+	TextOut(0,0,"Girando pra esquerda");
 }
 
 void turnLeft(unsigned int angle){
-	float factor = 360 / 63.5;
-	leftMotor(angle * factor * (-1));
-	rightMotor(angle * factor );
+
+	OnFwd(OUT_A, POTENCY);
+	OnRev(OUT_C, POTENCY);
+	float factor = 1200 / 90;
+	Wait(angle * factor);
 	TextOut(0,0,"Girando pra direita");
+
 }
 
 void mustStop(){
@@ -48,4 +54,5 @@ void mustStop(){
 	Off(OUT_AC);
 
 }
+
 
