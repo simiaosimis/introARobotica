@@ -3,16 +3,16 @@
 #include "claw.nxc"
 
 task main(){
- 	float factor = 360 / 63.5;
-	goAhead(50);
+
+	goAhead(70);
 	turnRight(45);
 	goAhead(17);
 	turnLeft(90);
-	goAhead(18);
+	goAhead(15);
  	turnLeft(90);
 	goBack(8);
-	turnLeft(45);
-	goAhead(60);
+	turnLeft(10);
+	goAhead(90);
   mustStop();
   
 }

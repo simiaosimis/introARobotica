@@ -4,13 +4,16 @@
 
 task main(){
 
-	goAhead(65);
+	goAhead(60);
 	turnLeft(85);
-	goAhead(90);
-	turnRight(115);
-	goAhead(90);
-	turnRight(30);
+	moveUp(90);
 	goAhead(80);
+	moveDown(90);
+	turnRight(100);
+  mustStopClaw();
+	goAhead(90);
+	goAhead(65);
   mustStop();
+
 }
 
