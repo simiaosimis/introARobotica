@@ -4,16 +4,21 @@
 
 task main(){
 
-	goAhead(60);
-	turnLeft(85);
-	moveUp(90);
+	goAhead(55);
+	turnLeft(64);
+	// Levanta garra
+	moveUp(60);
 	goAhead(80);
-	moveDown(90);
-	turnRight(100);
-  mustStopClaw();
-	goAhead(90);
-	goAhead(65);
-  mustStop();
+	// Abaixa garra
+ 	moveDown(60);
+ 	OffEx(OUT_AC, RESET_ALL);
+	turnRight(97);
+	
+	goAhead(110);	
+	//Fazer missão da placa?!?!
+	turnRight(10);
+	goAhead(25);
+   mustStop();
 
 }
 

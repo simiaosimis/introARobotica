@@ -1,5 +1,5 @@
 
-#define POTENCY 75
+#define POTENCY 50
 
 void leftMotor(int angle){
       RotateMotor(OUT_A, POTENCY, angle);
@@ -10,7 +10,10 @@ void rightMotor(int angle){
 }
 
 void bothMotors(int angle){
-      RotateMotor(OUT_AC, POTENCY, angle);
+  //RotateMotorEx(OUT_AC, POTENCY, angle, 0, true, true);
+  int startingRotation = MotorRotationCount(OUT_C);
+  OnFwdSync(OUT_AC, POTENCY, 0);
+  until(MotorRotationCount(OUT_C) > startingRotation + angle);
 }
 
 void goAhead(unsigned int distance){
@@ -32,21 +35,19 @@ void goBack(unsigned int distance){
 }
 
 void turnRight(unsigned int angle){
-	OnFwd(OUT_C, POTENCY);
-	OnRev(OUT_A, POTENCY);
-	float factor = 1200 / 90;
-	Wait(angle * factor);
-	TextOut(0,0,"Girando pra esquerda");
+	float factor = 360 / 68;
+	int startingRotation = MotorRotationCount(OUT_C);
+  OnFwdSync(OUT_AC, POTENCY, 100);
+  until(MotorRotationCount(OUT_C) > startingRotation + angle * factor);
+  Off(OUT_AC);
 }
 
 void turnLeft(unsigned int angle){
-
-	OnFwd(OUT_A, POTENCY);
-	OnRev(OUT_C, POTENCY);
-	float factor = 1200 / 90;
-	Wait(angle * factor);
-	TextOut(0,0,"Girando pra direita");
-
+	float factor = 360 / 68;
+	int startingRotation = MotorRotationCount(OUT_A);
+  OnFwdSync(OUT_AC, POTENCY, -100);
+  until(MotorRotationCount(OUT_A) > startingRotation + angle * factor);
+  Off(OUT_AC);
 }
 
 void mustStop(){

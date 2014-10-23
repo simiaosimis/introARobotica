@@ -3,13 +3,13 @@
 void moveUp(unsigned int angle){
 
      // OUT_B should be the engine with the claw
-     RotateMotor(OUT_B, POTENCY, - angle);
+     RotateMotor(OUT_B, POTENCY_CLAW, - angle);
 
 }
 
 void moveDown(unsigned int angle){
 
-     RotateMotor(OUT_B, POTENCY, angle);
+     RotateMotor(OUT_B, POTENCY_CLAW, angle);
 
 }
 

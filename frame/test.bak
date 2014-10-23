@@ -2,6 +2,8 @@
 
 task main(){
 
-     goAhead(360);
-     mustStop();
+     int startingRotation = MotorRotationCount(OUT_A);
+     OnFwdSync(OUT_AC, 75, -100);
+     until(MotorRotationCount(OUT_C) > startingRotation + 360);
+     OffEx(OUT_AC, RESET_ALL);
 }
