@@ -3,21 +3,40 @@
 #include "claw.nxc"
 
 task main(){
+	SetSensorUltrasonic(IN_1);
 
-	goAhead(55);
-	turnLeft(64);
+	goAhead(59);
+	turnLeft(85);
 	// Levanta garra
 	moveUp(60);
-	goAhead(80);
+
+  while(true){
+        if(SensorUS(IN_1) < 15){
+            Off(OUT_AC);
+            break;
+        }
+        else {
+            goAhead(4);
+        }
+  }
+  while(true){
+        if(SensorUS(IN_1) > 25){
+            Off(OUT_AC);
+            break;
+        }
+        else {
+             turnRight(3);
+        }
+  }
+  goAhead(30);
 	// Abaixa garra
  	moveDown(60);
- 	OffEx(OUT_AC, RESET_ALL);
-	turnRight(97);
-	
-	goAhead(110);	
+  goAhead(15);
+	turnRight(80);
+	goAhead(90);
 	//Fazer missão da placa?!?!
-	turnRight(10);
-	goAhead(25);
+	turnRight(30);
+	goAhead(55);
    mustStop();
 
 }

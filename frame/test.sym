@@ -1,69 +1,442 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0main	6	1	0	4	6
-1	__signed_stack_001main	6	1	4	4	4
-2	__constVal360	4	0	8	2	1
-3	__main_7qG2_startingRotation_7qG2_000	4	1	10	2	2
-4	__constVal96	2	0	12	1	2
-5	__constVal63	2	0	13	1	1
-6	__constVal127	2	0	14	1	1
-7	____initialize_global_data_return	1	1	15	1	3
-8	__zfmain	1	1	16	1	5
-9	__constVal2	2	0	17	1	1
-10	__constVal3	2	0	18	1	1
-11	__constVal0	2	1	19	1	7
-12	__constVal32	2	0	20	1	6
-13	__constVal7	2	0	21	1	1
-14	__OUT_AC	7	0	22	4	2
-15	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+0	__signed_stack_001turnRight	6	1	0	4	4
+1	__D0main	6	1	4	4	14
+2	__signed_stack_001main	6	1	8	4	4
+3	__signed_stack_002turnRight	6	1	12	4	2
+4	__constValf33P488372093	10	0	16	4	1
+5	__RLSBmutex0	9	0	20	4	4
+6	__D0bothMotorsAhead	6	1	24	4	6
+7	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	28	4	2
+8	__signed_stack_001goAhead	6	1	32	4	2
+9	__signed_stack_001bothMotorsAhead	6	1	36	4	4
+10	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	40	4	3
+11	__D0turnRight	6	1	44	4	4
+12	__signed_stack_002goAhead	6	1	48	4	2
+13	__DF0turnRight	10	1	52	4	4
+14	__TextOutMutex	9	0	56	4	2
+15	__turnRight_7qG2_factor_7qG2_000	10	1	60	4	2
+16	__CLSWMutex0	9	0	64	4	2
+17	__constValf5P7416267943	10	0	68	4	1
+18	__CLSCSMutex0	9	0	72	4	2
+19	__CLSRMutex0	9	0	76	4	2
+20	__goAhead_7qG2_distance_7qG2_000	3	1	80	2	3
+21	__bothMotorsAhead_7qG2_angle_7qG2_000	4	1	82	2	2
+22	__turnRight_7qG2_startingRotation_7qG2_000	4	1	84	2	2
+23	__turnRight_7qG2_angle_7qG2_000	3	1	86	2	2
+24	__bothMotorsAhead_7qG2_startingRotation_7qG2_000	4	1	88	2	2
+25	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	90	1	2
+26	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	91	1	4
+27	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	92	1	2
+28	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	93	1	2
+29	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	94	1	2
+30	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	95	1	2
+31	____initialize_global_data_return	1	1	96	1	3
+32	__turnRight_return	1	1	97	1	3
+33	__constVal96	2	0	98	1	6
+34	__bothMotorsAhead_return	1	1	99	1	3
+35	__constVal127	2	0	100	1	2
+36	__constVal63	2	0	101	1	4
+37	__goAhead_return	1	1	102	1	4
+38	__constVal1	2	0	103	1	3
+39	____ReadLSBytes0_return	1	1	104	1	4
+40	__RLSBytesCount0	1	1	105	1	8
+41	__RLSBResult0	2	1	106	1	7
+42	__constVal0	2	1	107	1	20
+43	__ResetSensorTmp	1	1	108	1	2
+44	__ResetSensorPort	1	1	109	1	3
+45	__constVal3	2	0	110	1	4
+46	____ResetSensorSubroutine_return	1	1	111	1	3
+47	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	112	1	2
+48	__zfbothMotorsAhead	1	1	113	1	5
+49	__zfmain	1	1	114	1	10
+50	__zfturnRight	1	1	115	1	5
+51	__constVal32	2	0	116	1	18
+52	__RLSBIterations0	1	1	117	1	4
+53	__constVal7	2	0	118	1	2
+54	__constVal2	2	0	119	1	6
+55	__CLSCSArgs0	8	0	3	4	4
+56	__CLSCSArgs0.Result	2	1	120	1	4
+57	__CLSCSArgs0.Port	1	1	121	1	4
+58	__CLSCSArgs0.BytesReady	1	1	122	1	4
+59	__TextOutArgs	8	0	4	16	5
+60	__TextOutArgs.Result	2	1	124	1	5
+61	__TextOutArgs.Location	8	0	2	4	5
+62	__TextOutArgs.Location.X	4	1	128	2	5
+63	__TextOutArgs.Location.Y	4	1	130	2	5
+64	__TextOutArgs.Text	7	0	132	4	5
+65	__TextOutArgs.Text.Text_type	1	0	0	1	0
+66	__TextOutArgs.Options	5	1	136	4	5
+67	__CLSRArgs0	8	0	4	12	5
+68	__CLSRArgs0.Result	2	1	140	1	5
+69	__CLSRArgs0.Port	1	1	141	1	5
+70	__CLSRArgs0.Buffer	7	0	142	4	5
+71	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+72	__CLSRArgs0.BufferLen	1	1	144	1	5
+73	__CLSWArgs0	8	0	4	12	5
+74	__CLSWArgs0.Result	2	1	148	1	5
+75	__CLSWArgs0.Port	1	1	149	1	5
+76	__CLSWArgs0.Buffer	7	0	150	4	5
+77	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+78	__CLSWArgs0.ReturnLen	1	1	152	1	5
+79	__OUT_AC	7	0	154	4	6
+80	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+81	__RLSReadBuf0	7	0	156	4	10
+82	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+83	__strbufgoAhead	7	0	158	4	2
+84	__strbufgoAhead.__strbufgoAhead_type	1	0	0	1	0
+85	__RLSLastGoodRead0	7	0	160	4	2
+86	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+87	__constStr0009	7	0	162	4	1
+88	__constStr0009.__constStr0009_type	1	1	0	1	0
+89	__RLSBbufLSWrite1	7	0	164	4	2
+90	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	4	0	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	4	2	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	5	2	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	2		getout __main_7qG2_startingRotation_7qG2_000, __constVal0, 14
-0	5	6	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	5	6	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	6		set __signed_stack_001main, 75
-0	5	9	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	5	9	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	9		set __D0main, -100
-0	6	12	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	12	#pragma macro 7
-0	7	12		setout __OUT_AC, 2, __signed_stack_001main, 1, __constVal7, 8, __constVal2, 7, __D0main, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	6707	35	#line 6707 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	35	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	35	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	35		getout __signed_stack_001main, __constVal0, 14
-0	6	39	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	39	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	39	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	39	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	39	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	39		add __D0main, __main_7qG2_startingRotation_7qG2_000, __constVal360
-0	6	43	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	43		cmp 1, __zfmain, __signed_stack_001main, __D0main
-0	6	47	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	6	47	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	47		not __D0main, __zfmain
-0	7	50	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	8	50		tst 5, __zfmain, __D0main
-0	7	53	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	8	53		brtst 4, __NXC_Label_671, __zfmain
-0	7	56	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	7	56	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	8	56		jmp __NXC_Label_670
-0	7	58	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	8	58	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	9	58	#pragma macro 7
-0	9	58		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal127
-0	6742	81	#line 6742 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	8	81	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-0	9	81		exit -1, -1
-1	11	0	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc"
-1	12	0		subret ____initialize_global_data_return
+0	3	0	#line 3 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	4	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	3	2	#line 3 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	3	2	#line 3 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	3	2	#line 3 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	3768	2	#line 3768 "NXCDefs.h"
+0	3769	2		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal0
+0	3768	4	#line 3768 "NXCDefs.h"
+0	3768	4	#line 3768 "NXCDefs.h"
+0	3769	4		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	3758	6	#line 3758 "NXCDefs.h"
+0	3759	6		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	3758	8	#line 3758 "NXCDefs.h"
+0	3758	8	#line 3758 "NXCDefs.h"
+0	3759	8		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	3758	10	#line 3758 "NXCDefs.h"
+0	3759	10		tst 5, __zfSetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	3758	13	#line 3758 "NXCDefs.h"
+0	3759	13		brtst 4, __001__001__NXC_Label_36, __zfSetSensorLowspeed_inline_SetSensorUltrasonic
+0	3758	16	#line 3758 "NXCDefs.h"
+0	3759	16		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	3758	19	#line 3758 "NXCDefs.h"
+0	3759	19		jmp __001__001__NXC_Label_37
+0	3758	21	#line 3758 "NXCDefs.h"
+0	3759	21		set __D0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	3758	24	#line 3758 "NXCDefs.h"
+0	3759	24		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	3663	26	#line 3663 "NXCDefs.h"
+0	3664	26		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	3663	30	#line 3663 "NXCDefs.h"
+0	3759	30	#line 3759 "NXCDefs.h"
+0	3759	30	#line 3759 "NXCDefs.h"
+0	3760	30		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	3759	32	#line 3759 "NXCDefs.h"
+0	3759	32	#line 3759 "NXCDefs.h"
+0	3760	32		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	3759	35	#line 3759 "NXCDefs.h"
+0	3676	35	#line 3676 "NXCDefs.h"
+0	3677	35		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	3676	39	#line 3676 "NXCDefs.h"
+0	3760	39	#line 3760 "NXCDefs.h"
+0	3760	39	#line 3760 "NXCDefs.h"
+0	3760	39	#line 3760 "NXCDefs.h"
+0	3694	39	#line 3694 "NXCDefs.h"
+0	3695	39	#pragma macro 4
+0	3695	39		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	3695	41		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7442	43	#line 7442 "NXCDefs.h"
+0	3694	43	#line 3694 "NXCDefs.h"
+0	3761	43	#line 3761 "NXCDefs.h"
+0	3768	43	#line 3768 "NXCDefs.h"
+0	4	43	#line 4 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	4	43	#line 4 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	5	43		set __D0main, 1
+0	5	46	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	46		tst 5, __zfmain, __D0main
+0	5	49	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	49		brtst 4, __NXC_Label_691, __zfmain
+0	5	52	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	52	#pragma macro 26
+0	6	52		acquire __RLSBmutex0
+0	6	53		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	6	55		set __RLSBytesCount0, 1
+0	6	58		wait 15
+0	6	60		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	6	62		index __D0main, __RLSReadBuf0, 65535
+0	6	66		release __RLSBmutex0
+0	7457	67	#line 7457 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	5	67	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	67		mov __signed_stack_001main, __D0main
+0	5	69	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	69		set __D0main, 15
+0	5	72	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	72		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	5	76	#line 5 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	6	76		mov __D0main, __zfmain
+0	6	78	#line 6 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	7	78		brtst 4, __NXC_Label_696, __zfmain
+0	7	81	#line 7 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	8	81	#pragma macro 7
+0	8	81		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7471	104	#line 7471 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	7	104	#line 7 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	8	104	#line 8 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	9	104		jmp __NXC_Label_691
+0	8	106	#line 8 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	10	106	#line 10 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	11	106		jmp __NXC_Label_697
+0	10	108	#line 10 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	11	108		set __goAhead_7qG2_distance_7qG2_000, 4
+0	10	111	#line 10 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	11	111	#line 11 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	12	111		subcall goAhead, __goAhead_return
+0	11	113	#line 11 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	13	113	#line 13 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	13	113	#line 13 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	14	113		jmp __NXC_Label_690
+0	13	115	#line 13 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	13	115	#line 13 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	14	115		set __D0main, 1
+0	14	118	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	118		tst 5, __zfmain, __D0main
+0	14	121	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	121		brtst 4, __NXC_Label_701, __zfmain
+0	14	124	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	124	#pragma macro 26
+0	15	124		acquire __RLSBmutex0
+0	15	125		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	15	127		set __RLSBytesCount0, 1
+0	15	130		wait 15
+0	15	132		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	15	134		index __D0main, __RLSReadBuf0, 65535
+0	15	138		release __RLSBmutex0
+0	7504	139	#line 7504 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	14	139	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	139		mov __signed_stack_001main, __D0main
+0	14	141	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	141		set __D0main, 30
+0	14	144	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	144		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	14	148	#line 14 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	15	148		mov __D0main, __zfmain
+0	15	150	#line 15 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	16	150		brtst 4, __NXC_Label_706, __zfmain
+0	16	153	#line 16 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	17	153	#pragma macro 7
+0	17	153		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7518	176	#line 7518 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	16	176	#line 16 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	17	176	#line 17 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	18	176		jmp __NXC_Label_701
+0	17	178	#line 17 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	19	178	#line 19 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	20	178		jmp __NXC_Label_707
+0	19	180	#line 19 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	20	180		set __turnRight_7qG2_angle_7qG2_000, 3
+0	19	183	#line 19 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	20	183	#line 20 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	21	183		subcall turnRight, __turnRight_return
+0	20	185	#line 20 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	22	185	#line 22 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	22	185	#line 22 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	23	185		jmp __NXC_Label_700
+0	22	187	#line 22 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	22	187	#line 22 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	23	187		set __goAhead_7qG2_distance_7qG2_000, 20
+0	22	190	#line 22 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	23	190	#line 23 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	24	190		subcall goAhead, __goAhead_return
+0	23	192	#line 23 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+0	24	192		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait 15
+2	5686	54		jmp __RLSBDoCheckStatus0
+2	5689	56	#pragma macro 25
+2	5689	56		acquire __CLSRMutex0
+2	5689	57		set __CLSRArgs0.Port, 0
+2	5689	60		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	62		syscall 22, __CLSRArgs0
+2	5689	65		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	67		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	69		release __CLSRMutex0
+2	5689	70	#line 5689 "NXTDefs.h"
+2	5690	70		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	73		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	75		jmp __RLSBDone0
+2	5694	77		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	79		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	82		subret ____ReadLSBytes0_return
+3	13	0	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	0		getout __bothMotorsAhead_7qG2_startingRotation_7qG2_000, __constVal2, 14
+3	13	4	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	13	4	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	4		set __signed_stack_001bothMotorsAhead, 75
+3	13	7	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	13	7	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	7		set __D0bothMotorsAhead, 0
+3	14	10	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	10	#pragma macro 7
+3	15	10		setout __OUT_AC, 2, __signed_stack_001bothMotorsAhead, 1, __constVal7, 8, __constVal2, 7, __D0bothMotorsAhead, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6866	33	#line 6866 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	33	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	33	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	33		getout __signed_stack_001bothMotorsAhead, __constVal2, 14
+3	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	37	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	37		add __D0bothMotorsAhead, __bothMotorsAhead_7qG2_startingRotation_7qG2_000, __bothMotorsAhead_7qG2_angle_7qG2_000
+3	14	41	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	41		cmp 1, __zfbothMotorsAhead, __signed_stack_001bothMotorsAhead, __D0bothMotorsAhead
+3	14	45	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	14	45	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	45		not __D0bothMotorsAhead, __zfbothMotorsAhead
+3	15	48	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	48		tst 5, __zfbothMotorsAhead, __D0bothMotorsAhead
+3	15	51	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	51		brtst 4, __NXC_Label_619, __zfbothMotorsAhead
+3	15	54	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	15	54	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	54		jmp __NXC_Label_618
+3	15	56	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	56	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	17	56	#pragma macro 7
+3	17	56		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal127
+3	6901	79	#line 6901 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	79	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	79	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	16	79	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	7921	79	#line 7921 "NXCDefs.h"
+3	7922	79		wait 300
+3	7921	81	#line 7921 "NXCDefs.h"
+3	17	81	#line 17 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	19	81	#line 19 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+3	20	81		subret __bothMotorsAhead_return
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	31	0	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	32	0		mul __bothMotorsAhead_7qG2_angle_7qG2_000, __goAhead_7qG2_distance_7qG2_000, __constValf33P488372093
+4	31	4	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	32	4	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	33	4		subcall bothMotorsAhead, __bothMotorsAhead_return
+4	32	6	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	32	6	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	33	6		set __signed_stack_001goAhead, 0
+4	32	9	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	32	9	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	33	9		set __signed_stack_002goAhead, 0
+4	32	12	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	32	12	#line 32 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	33	12		strcat __strbufgoAhead, __constStr0009
+4	34	16	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	16		acquire __TextOutMutex
+4	34	17	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	17		mov __TextOutArgs.Location.X, __signed_stack_001goAhead
+4	34	19	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	19		mov __TextOutArgs.Location.Y, __signed_stack_002goAhead
+4	34	21	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	21		set __TextOutArgs.Options, 0
+4	34	24	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	24		mov __TextOutArgs.Text, __strbufgoAhead
+4	34	26	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	26		syscall 13, __TextOutArgs
+4	34	29	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	34	29	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	35	29		release __TextOutMutex
+4	34	30	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	36	30	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+4	37	30		subret __goAhead_return
+5	47	0	#line 47 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	48	0		mov __turnRight_7qG2_factor_7qG2_000, __constValf5P7416267943
+5	47	2	#line 47 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	48	2	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	2		getout __turnRight_7qG2_startingRotation_7qG2_000, __constVal2, 14
+5	48	6	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	48	6	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	6		set __signed_stack_001turnRight, 75
+5	48	9	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	48	9	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	9		set __D0turnRight, 100
+5	49	12	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	12	#pragma macro 7
+5	50	12		setout __OUT_AC, 2, __signed_stack_001turnRight, 1, __constVal7, 8, __constVal2, 7, __D0turnRight, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7168	35	#line 7168 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	35	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	35	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	35		getout __signed_stack_001turnRight, __constVal2, 14
+5	49	39	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	39	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	39		mov __signed_stack_002turnRight, __turnRight_7qG2_startingRotation_7qG2_000
+5	49	41	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	41	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	41	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	41	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	41	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	41		mul __DF0turnRight, __turnRight_7qG2_angle_7qG2_000, __turnRight_7qG2_factor_7qG2_000
+5	49	45	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	45		add __DF0turnRight, __signed_stack_002turnRight, __DF0turnRight
+5	49	49	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	49		cmp 1, __zfturnRight, __signed_stack_001turnRight, __DF0turnRight
+5	49	53	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	49	53	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	53		not __D0turnRight, __zfturnRight
+5	50	56	#line 50 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	56		tst 5, __zfturnRight, __D0turnRight
+5	50	59	#line 50 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	59		brtst 4, __NXC_Label_665, __zfturnRight
+5	50	62	#line 50 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	50	62	#line 50 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	62		jmp __NXC_Label_664
+5	50	64	#line 50 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	64	#line 51 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	52	64	#pragma macro 7
+5	52	64		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal127
+5	7209	87	#line 7209 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	87	#line 51 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	87	#line 51 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	51	87	#line 51 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	7921	87	#line 7921 "NXCDefs.h"
+5	7922	87		wait 300
+5	7921	89	#line 7921 "NXCDefs.h"
+5	52	89	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	54	89	#line 54 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc"
+5	55	89		subret __turnRight_return
+6	26	0	#line 26 "C:\Users\simiao\AppData\Local\Temp\temp.nxc"
+6	27	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc
-1	__initialize_global_data	84	C:\Users\simiao\Documents\GitHub\introARobotica\frame\test.nxc
+0	main	0	C:\Users\simiao\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	195	NXTDefs.h
+2	__ReadLSBytes0	208	NXTDefs.h
+3	bothMotorsAhead	292	C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc
+4	goAhead	375	C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc
+5	turnRight	407	C:\Users\simiao\Documents\GitHub\introARobotica\frame\move.nxc
+6	__initialize_global_data	498	C:\Users\simiao\AppData\Local\Temp\temp.nxc

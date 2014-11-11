@@ -1,9 +1,24 @@
 #include "move.nxc"
 
 task main(){
-
-     int startingRotation = MotorRotationCount(OUT_A);
-     OnFwdSync(OUT_AC, 75, -100);
-     until(MotorRotationCount(OUT_A) > startingRotation + 360);
-     OffEx(OUT_AC, RESET_ALL);
+  SetSensorUltrasonic(IN_1);
+    while(true){
+        if(SensorUS(IN_1) < 15){
+            Off(OUT_AC);
+            break;
+        }
+        else {
+            goAhead(4);
+        }
+    }
+    while(true){
+        if(SensorUS(IN_1) > 25){
+            Off(OUT_AC);
+            break;
+        }
+        else {
+             turnRight(3);
+        }
+    }
+    goAhead(20);
 }

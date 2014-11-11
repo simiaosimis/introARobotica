@@ -1,5 +1,5 @@
 
-#define POTENCY 50
+#define POTENCY 75
 
 void leftMotor(int angle){
       RotateMotor(OUT_A, POTENCY, angle);
@@ -9,18 +9,27 @@ void rightMotor(int angle){
       RotateMotor(OUT_C, POTENCY, angle);
 }
 
-void bothMotors(int angle){
-  //RotateMotorEx(OUT_AC, POTENCY, angle, 0, true, true);
+void bothMotorsAhead(int angle){
   int startingRotation = MotorRotationCount(OUT_C);
   OnFwdSync(OUT_AC, POTENCY, 0);
   until(MotorRotationCount(OUT_C) > startingRotation + angle);
+  OffEx(OUT_AC, RESET_ALL);
+  Wait(300);
+}
+
+void bothMotorsBack(int angle){
+  int startingRotation = MotorRotationCount(OUT_C);
+  OnFwdSync(OUT_AC, -POTENCY, 0);
+  until(MotorRotationCount(OUT_C) < startingRotation - angle);
+  OffEx(OUT_AC, RESET_ALL);
+  Wait(300);
 }
 
 void goAhead(unsigned int distance){
 
 	//float factor = 2000 / 30.5; >>>> antigo
   float factor = 360/10.75;
-	bothMotors(distance * factor);
+	bothMotorsAhead(distance * factor);
 	TextOut(0,0,"Andando pra frente");
 
 }
@@ -29,30 +38,32 @@ void goBack(unsigned int distance){
 	
 	//float factor = 2000 / 30.5; >>>> antigo
   float factor = 360/10.75;
-	bothMotors( (-1) * distance * factor);
+	bothMotorsBack( distance * factor);
 	TextOut(0,0,"Andando pra traz");
 
 }
 
 void turnRight(unsigned int angle){
-	float factor = 360 / 68;
+	float factor = 360 / 62.7;
 	int startingRotation = MotorRotationCount(OUT_C);
   OnFwdSync(OUT_AC, POTENCY, 100);
   until(MotorRotationCount(OUT_C) > startingRotation + angle * factor);
-  Off(OUT_AC);
+  OffEx(OUT_AC, RESET_ALL);
+  Wait(300);
 }
 
 void turnLeft(unsigned int angle){
-	float factor = 360 / 68;
+	float factor = 360 / 62.7;
 	int startingRotation = MotorRotationCount(OUT_A);
   OnFwdSync(OUT_AC, POTENCY, -100);
   until(MotorRotationCount(OUT_A) > startingRotation + angle * factor);
-  Off(OUT_AC);
+  OffEx(OUT_AC, RESET_ALL);
+  Wait(300);
 }
 
 void mustStop(){
 
-	Off(OUT_AC);
+ OffEx(OUT_AC, RESET_ALL);
 
 }
 
