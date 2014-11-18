@@ -4,12 +4,19 @@
 
 task main(){
 	SetSensorUltrasonic(IN_1);
+	SetSensorTouch(IN_4);
 
-	goAhead(59);
-	turnLeft(76);
-	// Levanta garra
+  //Go til the firzt obstacle.
+  while(Sensor(IN_4) == 0){
+    goAhead(2);
+  }
+  // Retrieve a little to make sure it does not hit the obstacle.
+  goBack(5);
+  // Turn to focus on the house.
+	turnLeft(85);
 	moveUp(60);
 
+  // while does not find the house go ahead. When find it turn right to pick up the person.
   while(true){
         if(SensorUS(IN_1) < 15){
             Off(OUT_AC);
@@ -28,16 +35,36 @@ task main(){
              turnRight(3);
         }
   }
+  
+  // Pick up the person and turn left to find the wall.
   goAhead(30);
-	// Abaixa garra
- 	moveDown(60);
-  goAhead(15);
+  turnLeft(10);
+  
+  // Go ahead until find the wall.
+  while(true){
+        if(SensorUS(IN_1) < 10){
+            Off(OUT_AC);
+            break;
+        }
+        else {
+            goAhead(2);
+        }
+  }
+
+  // Retrieve a little and close the claw.
+  goBack(3);
+  moveDown(60);
+  
+  // Go make the evaluation sign.
 	turnRight(80);
 	goAhead(90);
-	//Fazer missão da placa?!?!
+
+  // Go to the safe place (red region).
 	turnRight(30);
 	goAhead(55);
-   mustStop();
+
+  // Turn off the engines.
+  mustStop();
 
 }
 
