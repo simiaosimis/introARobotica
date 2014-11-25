@@ -5,12 +5,12 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 2	__signed_stack_002goAhead	6	1	8	4	2
 3	__signed_stack_001goBack	6	1	12	4	2
 4	__rotate_theAngle1	5	1	16	4	2
-5	__signed_stack_001moveDown	6	1	20	4	2
+5	__signed_stack_001moveUp	6	1	20	4	2
 6	__signed_stack_002goBack	6	1	24	4	2
 7	__signed_stack_001goAhead	6	1	28	4	2
 8	__D0bothMotorsBack	6	1	32	4	6
 9	__rotateMutex1	9	0	36	4	2
-10	__DU0moveDown	5	1	40	4	2
+10	__D0moveUp	6	1	40	4	2
 11	__rotate_angle1	6	1	44	4	4
 12	__signed_stack_001bothMotorsBack	6	1	48	4	4
 13	__D0bothMotorsAhead	6	1	52	4	6
@@ -20,14 +20,14 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 17	__bothMotorsAhead_7qG2_angle_7qG2_000	4	1	64	2	2
 18	__goAhead_7qG2_distance_7qG2_000	3	1	66	2	2
 19	__bothMotorsBack_7qG2_startingRotation_7qG2_000	4	1	68	2	2
-20	__moveDown_7qG2_angle_7qG2_000	3	1	70	2	2
+20	__moveUp_7qG2_angle_7qG2_000	3	1	70	2	2
 21	__goBack_7qG2_distance_7qG2_000	3	1	72	2	2
 22	__bothMotorsBack_7qG2_angle_7qG2_000	4	1	74	2	2
 23	__rotate_OldRotCount1	4	1	76	2	2
 24	__mustStop_return	1	1	78	1	3
 25	__goBack_return	1	1	79	1	3
 26	__mustStopClaw_return	1	1	80	1	3
-27	__moveDown_return	1	1	81	1	3
+27	__moveUp_return	1	1	81	1	3
 28	____initialize_global_data_return	1	1	82	1	3
 29	__bothMotorsAhead_return	1	1	83	1	3
 30	__bothMotorsBack_return	1	1	84	1	3
@@ -58,7 +58,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 55	__rotate_theTurnPct1	2	1	109	1	4
 56	__constVal1	2	0	110	1	5
 57	____RotateMotor1_return	1	1	111	1	3
-58	__constVal0	2	1	112	1	24
+58	__constVal0	2	1	112	1	25
 59	__TextOutArgs	8	0	4	16	10
 60	__TextOutArgs.Result	2	1	116	1	10
 61	__TextOutArgs.Location	8	0	2	4	10
@@ -81,31 +81,31 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 78	__strbufgoBack.__strbufgoBack_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	4	0	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	4	2	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	4	2	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	5	2		set __goAhead_7qG2_distance_7qG2_000, 85
-0	4	5	#line 4 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	5	5	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	6	5		subcall goAhead, __goAhead_return
-0	5	7	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	5	7	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	6	7		set __moveDown_7qG2_angle_7qG2_000, 70
-0	5	10	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	6	10	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	7	10		subcall moveDown, __moveDown_return
-0	6	12	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	6	12	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	7	12		set __goBack_7qG2_distance_7qG2_000, 90
-0	6	15	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	7	15	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	8	15		subcall goBack, __goBack_return
-0	7	17	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	8	17	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	9	17		subcall mustStop, __mustStop_return
-0	8	19	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-0	9	19		exit -1, -1
+0	5	0	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	6	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	5	2	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	5	2	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	6	2		set __goAhead_7qG2_distance_7qG2_000, 75
+0	5	5	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	6	5	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	7	5		subcall goAhead, __goAhead_return
+0	6	7	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	6	7	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	7	7		set __moveUp_7qG2_angle_7qG2_000, 60
+0	6	10	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	7	10	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	8	10		subcall moveUp, __moveUp_return
+0	7	12	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	7	12	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	8	12		set __goBack_7qG2_distance_7qG2_000, 80
+0	7	15	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	8	15	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	9	15		subcall goBack, __goBack_return
+0	8	17	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	9	17	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	10	17		subcall mustStop, __mustStop_return
+0	9	19	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+0	10	19		exit -1, -1
 1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
 1	4530	3		sign __rotate_thePower1, __rotate_angle1
 1	4531	6		abs __rotate_theAngle1, __rotate_angle1
@@ -324,37 +324,40 @@ Clump	Line	PC	Source
 7	6	23	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
 7	8	23	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
 7	9	23		subret __mustStopClaw_return
-8	17	0	#line 17 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	18	0		set __signed_stack_001moveDown, 75
-8	17	3	#line 17 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	17	3	#line 17 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	18	3		mov __DU0moveDown, __moveDown_7qG2_angle_7qG2_000
-8	18	5	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	19	5	#pragma macro 33
-8	19	5		acquire __rotateMutex1
-8	19	6		arrbuild __rotate_ports1, __constVal1
-8	19	10		mov __rotate_power1, __signed_stack_001moveDown
-8	19	12		mov __rotate_angle1, __DU0moveDown
-8	19	14		mov __rotate_turnpct1, __constVal0
-8	19	16		mov __rotate_sync1, __constVal0
-8	19	18		mov __rotate_stop1, __constVal1
-8	19	20		mov __rotate_theRVP1, __constVal32
-8	19	22		mov __rotate_theRVI1, __constVal0
-8	19	24		mov __rotate_theRVD1, __constVal96
-8	19	26		subcall __RotateMotor1, ____RotateMotor1_return
-8	19	28		release __rotateMutex1
-8	7549	29	#line 7549 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	18	29	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	19	29	#line 19 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	20	29		subcall mustStopClaw, __mustStopClaw_return
-8	19	31	#line 19 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	22	31	#line 22 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
-8	23	31		subret __moveDown_return
-9	11	0	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc"
-9	12	0		subret ____initialize_global_data_return
+8	11	0	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	12	0		set __signed_stack_001moveUp, 75
+8	11	3	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	11	3	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	11	3	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	11	3	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	11	3	#line 11 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	12	3		sub __D0moveUp, __constVal0, __moveUp_7qG2_angle_7qG2_000
+8	12	7	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	13	7	#pragma macro 33
+8	13	7		acquire __rotateMutex1
+8	13	8		arrbuild __rotate_ports1, __constVal1
+8	13	12		mov __rotate_power1, __signed_stack_001moveUp
+8	13	14		mov __rotate_angle1, __D0moveUp
+8	13	16		mov __rotate_turnpct1, __constVal0
+8	13	18		mov __rotate_sync1, __constVal0
+8	13	20		mov __rotate_stop1, __constVal1
+8	13	22		mov __rotate_theRVP1, __constVal32
+8	13	24		mov __rotate_theRVI1, __constVal0
+8	13	26		mov __rotate_theRVD1, __constVal96
+8	13	28		subcall __RotateMotor1, ____RotateMotor1_return
+8	13	30		release __rotateMutex1
+8	7524	31	#line 7524 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	12	31	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	13	31	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	14	31		subcall mustStopClaw, __mustStopClaw_return
+8	13	33	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	15	33	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
+8	16	33		subret __moveUp_return
+9	12	0	#line 12 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc"
+9	13	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc
+0	main	0	C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc
 1	__RotateMotor1	22	NXTDefs.h
 2	bothMotorsAhead	176	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
 3	bothMotorsBack	259	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
@@ -362,5 +365,5 @@ Clump	Name	Offset	File
 5	goBack	374	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
 6	mustStop	406	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
 7	mustStopClaw	431	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
-8	moveDown	456	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
-9	__initialize_global_data	489	C:\Users\simiao\Documents\GitHub\introARobotica\frame\petsMission.nxc
+8	moveUp	456	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
+9	__initialize_global_data	491	C:\Users\simiao\Documents\GitHub\introARobotica\frame\wavesMission.nxc

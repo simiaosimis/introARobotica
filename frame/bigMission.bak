@@ -8,16 +8,21 @@ task main(){
 	
   int degreesTurnedOnHouse = 0;
   int degreesTurnedOnSign = 0;
+  int stopTrying = 0;
 
   //Go til the firzt obstacle.
+  goAhead(45);
   while(Sensor(IN_4) == 0){
     goAhead(2);
   }
   // Retrieve a little to make sure it does not hit the obstacle.
   goBack(5);
   // Turn to focus on the house.
-	turnLeft(90);
+	turnLeft(80);
 	moveUp(60);
+
+  //Gets closer to the house
+  goAhead(15);
 
   // while does not find the house go ahead. When find it turn right to pick up the person.
   while(true){
@@ -59,36 +64,44 @@ task main(){
   moveDown(60);
   
   // Go make the evaluation sign.
-	turnRight(100 - degreesTurnedOnHouse);
-	goAhead(99);
+	turnRight(110 - degreesTurnedOnHouse);
+	goAhead(50);
+	turnRight(40);
+	goAhead(48);
 	
  // Take a look searching for the sign.
-  while(true){
-        if(SensorUS(IN_1) < 10){
+ while(true){
+        if(stopTrying){
+            break;
+        }
+        if(SensorUS(IN_1) < 15){
             Off(OUT_AC);
             break;
         }
         else {
-            if(degreesTurnedOnSign < 15){
+            if(degreesTurnedOnSign < 150){
                 degreesTurnedOnSign += 2;
                 turnLeft(2);
             }
-            else if(degreesTurnedOnSign < 45){
+            /*else if(degreesTurnedOnSign < 30){
                 degreesTurnedOnSign += 2;
                 turnRight(2);
-            }
+            }*/
             else{
                 degreesTurnedOnSign = 0;
+                stopTrying = 1;
             }
         }
   }
-
+  
   // Hit the sign
-  goAhead(6);
+  turnLeft(5);
+  goAhead(10);
   goBack(10);
 
+
   // Go to the safe place (red region).
-	turnRight(25);
+	turnRight(35);
 	goAhead(55);
 
   // Turn off the engines.

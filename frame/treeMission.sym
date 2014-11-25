@@ -75,7 +75,7 @@ Clump	Line	PC	Source
 0	7	0		subcall __initialize_global_data, ____initialize_global_data_return
 0	6	2	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	6	2	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
-0	7	2		set __goAhead_7qG2_distance_7qG2_000, 50
+0	7	2		set __goAhead_7qG2_distance_7qG2_000, 60
 0	6	5	#line 6 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	7	5	#line 7 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	8	5		subcall goAhead, __goAhead_return
@@ -87,13 +87,13 @@ Clump	Line	PC	Source
 0	9	10		subcall turnRight, __turnRight_return
 0	8	12	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	8	12	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
-0	9	12		set __goAhead_7qG2_distance_7qG2_000, 28
+0	9	12		set __goAhead_7qG2_distance_7qG2_000, 24
 0	8	15	#line 8 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	9	15	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	10	15		subcall goAhead, __goAhead_return
 0	9	17	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	9	17	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
-0	10	17		set __turnLeft_7qG2_angle_7qG2_000, 74
+0	10	17		set __turnLeft_7qG2_angle_7qG2_000, 80
 0	9	20	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	10	20	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\treeMission.nxc"
 0	11	20		subcall turnLeft, __turnLeft_return

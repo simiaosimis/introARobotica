@@ -1,0 +1,10 @@
+#include "move.nxc"
+#include "claw.nxc"
+
+task main(){
+
+     goAhead(75);
+     moveUp(70);
+     goBack(80);
+     mustStop();
+}

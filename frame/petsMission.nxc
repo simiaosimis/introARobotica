@@ -2,7 +2,7 @@
 #include "claw.nxc"
 
 task main() {
-	goAhead(80);
+	goAhead(85);
 	moveDown(70);
 	goBack(90);
 	mustStop();
