@@ -66,43 +66,14 @@ task main(){
   // Go make the evaluation sign.
 	turnRight(110 - degreesTurnedOnHouse);
 	goAhead(50);
-	turnRight(40);
+	turnRight(20);
 	goAhead(48);
-	
- // Take a look searching for the sign.
- while(true){
-        if(stopTrying){
-            break;
-        }
-        if(SensorUS(IN_1) < 15){
-            Off(OUT_AC);
-            break;
-        }
-        else {
-            if(degreesTurnedOnSign < 150){
-                degreesTurnedOnSign += 2;
-                turnLeft(2);
-            }
-            /*else if(degreesTurnedOnSign < 30){
-                degreesTurnedOnSign += 2;
-                turnRight(2);
-            }*/
-            else{
-                degreesTurnedOnSign = 0;
-                stopTrying = 1;
-            }
-        }
-  }
-  
-  // Hit the sign
-  turnLeft(5);
-  goAhead(10);
-  goBack(10);
+
 
 
   // Go to the safe place (red region).
-	turnRight(35);
-	goAhead(55);
+	turnRight(8);
+	goAhead(48);
 
   // Turn off the engines.
   mustStop();

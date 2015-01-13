@@ -10,7 +10,7 @@ task main(){
 	turnLeft(80);
 	goAhead(16);
  	turnLeft(90);
-	goBack(8);
+	//goBack(8);
 	turnLeft(10);
 	goAhead(75);
   mustStop();

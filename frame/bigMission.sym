@@ -9,10 +9,10 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 6	__DF0turnRight	10	1	24	4	4
 7	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	28	4	3
 8	__TextOutMutex	9	0	32	4	4
-9	__RLSBmutex0	9	0	36	4	8
+9	__RLSBmutex0	9	0	36	4	6
 10	__CLSWMutex0	9	0	40	4	2
 11	__CLSRMutex0	9	0	44	4	2
-12	__D0main	6	1	48	4	36
+12	__D0main	6	1	48	4	24
 13	__DU0moveDown	5	1	52	4	2
 14	__D0bothMotorsAhead	6	1	56	4	6
 15	__D0bothMotorsBack	6	1	60	4	6
@@ -31,129 +31,127 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 28	__signed_stack_001moveDown	6	1	112	4	2
 29	__signed_stack_001moveUp	6	1	116	4	2
 30	__signed_stack_002goBack	6	1	120	4	2
-31	__signed_stack_001main	6	1	124	4	12
+31	__signed_stack_001main	6	1	124	4	8
 32	__CLSCSMutex0	9	0	128	4	2
-33	__rotate_angle1	6	1	132	4	5
-34	__rotateMutex1	9	0	136	4	4
-35	__ResetSensorMutex	9	0	140	4	4
-36	__rotate_theAngle1	5	1	144	4	2
-37	__turnRight_7qG2_angle_7qG2_000	3	1	148	2	5
-38	__turnLeft_7qG2_startingRotation_7qG2_000	4	1	150	2	2
-39	__moveUp_7qG2_angle_7qG2_000	3	1	152	2	2
-40	__turnRight_7qG2_startingRotation_7qG2_000	4	1	154	2	2
-41	__turnLeft_7qG2_angle_7qG2_000	3	1	156	2	5
-42	__bothMotorsBack_7qG2_angle_7qG2_000	4	1	158	2	2
-43	__bothMotorsBack_7qG2_startingRotation_7qG2_000	4	1	160	2	2
-44	__bothMotorsAhead_7qG2_angle_7qG2_000	4	1	162	2	2
-45	__bothMotorsAhead_7qG2_startingRotation_7qG2_000	4	1	164	2	2
-46	__rotate_RotCount1	4	1	166	2	4
-47	__goBack_7qG2_distance_7qG2_000	3	1	168	2	3
-48	__goAhead_7qG2_distance_7qG2_000	3	1	170	2	11
-49	__rotate_OldRotCount1	4	1	172	2	2
-50	__moveDown_7qG2_angle_7qG2_000	3	1	174	2	2
-51	__main_7qG2_stopTrying_7qG2_000	4	1	176	2	3
-52	__main_7qG2_degreesTurnedOnHouse_7qG2_000	4	1	178	2	4
-53	__main_7qG2_degreesTurnedOnSign_7qG2_000	4	1	180	2	5
-54	__bothMotorsBack_return	1	1	182	1	3
-55	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	183	1	2
-56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	184	1	2
-57	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	185	1	4
-58	__goAhead_return	1	1	186	1	12
-59	__constVal110	2	0	187	1	1
-60	__constVal96	2	0	188	1	16
-61	__rotate_firstPort1	1	1	189	1	5
-62	__constVal127	2	0	190	1	5
-63	__constVal63	2	0	191	1	9
-64	__bothMotorsAhead_return	1	1	192	1	3
-65	__moveDown_return	1	1	193	1	3
-66	____initialize_global_data_return	1	1	194	1	3
-67	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	195	1	4
-68	__turnLeft_return	1	1	196	1	6
-69	__moveUp_return	1	1	197	1	3
-70	__mustStopClaw_return	1	1	198	1	4
-71	__mustStop_return	1	1	199	1	3
-72	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	200	1	2
-73	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	201	1	2
-74	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	202	1	2
-75	__goBack_return	1	1	203	1	4
-76	__rotate_power1	1	1	204	1	5
-77	__turnRight_return	1	1	205	1	6
-78	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	206	1	2
-79	__zfbothMotorsBack	1	1	207	1	5
-80	____RotateMotor1_return	1	1	208	1	4
-81	__zfbothMotorsAhead	1	1	209	1	5
-82	__constVal3	2	0	210	1	12
-83	__zfmain	1	1	211	1	28
-84	__constVal32	2	0	212	1	48
-85	__zfturnLeft	1	1	213	1	5
-86	__constVal0	2	1	214	1	58
-87	__constVal1	2	0	215	1	11
-88	____ReadLSBytes0_return	1	1	216	1	6
-89	__ResetSensorPort	1	1	217	1	4
-90	____ResetSensorSubroutine_return	1	1	218	1	4
-91	__ResetSensorTmp	1	1	219	1	2
-92	__RLSBResult0	2	1	220	1	7
-93	__constVal2	2	0	221	1	11
-94	__constVal7	2	0	222	1	4
-95	__RLSBytesCount0	1	1	223	1	10
-96	__RLSBIterations0	1	1	224	1	4
-97	__rotate_theRS1	1	1	225	1	3
-98	__rotate_theRM1	1	1	226	1	4
-99	__rotate_theRVP1	1	1	227	1	3
-100	__rotate_theRVD1	1	1	228	1	3
-101	__rotate_theRVI1	1	1	229	1	3
-102	__rotate_stop1	1	1	230	1	3
-103	__rotate_sync1	1	1	231	1	3
-104	__rotate_turnpct1	2	1	232	1	4
-105	__rotate_theOM1	1	1	233	1	7
-106	__rotate_theUF1	1	1	234	1	6
-107	__rotate_thePower1	2	1	235	1	4
-108	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	236	1	2
-109	__rotate_theTurnPct1	2	1	237	1	4
-110	__zfturnRight	1	1	238	1	5
-111	__rotate_rs1	1	1	239	1	2
-112	__CLSWArgs0	8	0	4	12	5
-113	__CLSWArgs0.Result	2	1	240	1	5
-114	__CLSWArgs0.Port	1	1	241	1	5
-115	__CLSWArgs0.Buffer	7	0	242	4	5
-116	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-117	__CLSWArgs0.ReturnLen	1	1	244	1	5
-118	__TextOutArgs	8	0	4	16	10
-119	__TextOutArgs.Result	2	1	248	1	10
-120	__TextOutArgs.Location	8	0	2	4	10
-121	__TextOutArgs.Location.X	4	1	252	2	10
-122	__TextOutArgs.Location.Y	4	1	254	2	10
-123	__TextOutArgs.Text	7	0	256	4	10
-124	__TextOutArgs.Text.Text_type	1	0	0	1	0
-125	__TextOutArgs.Options	5	1	260	4	10
-126	__CLSRArgs0	8	0	4	12	5
-127	__CLSRArgs0.Result	2	1	264	1	5
-128	__CLSRArgs0.Port	1	1	265	1	5
-129	__CLSRArgs0.Buffer	7	0	266	4	5
-130	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-131	__CLSRArgs0.BufferLen	1	1	268	1	5
-132	__CLSCSArgs0	8	0	3	4	4
-133	__CLSCSArgs0.Result	2	1	272	1	4
-134	__CLSCSArgs0.Port	1	1	273	1	4
-135	__CLSCSArgs0.BytesReady	1	1	274	1	4
-136	__constStr0012	7	0	276	4	1
+33	__rotateMutex1	9	0	132	4	4
+34	__ResetSensorMutex	9	0	136	4	4
+35	__rotate_theAngle1	5	1	140	4	2
+36	__rotate_angle1	6	1	144	4	5
+37	__turnRight_7qG2_startingRotation_7qG2_000	4	1	148	2	2
+38	__bothMotorsBack_7qG2_startingRotation_7qG2_000	4	1	150	2	2
+39	__bothMotorsBack_7qG2_angle_7qG2_000	4	1	152	2	2
+40	__moveUp_7qG2_angle_7qG2_000	3	1	154	2	2
+41	__rotate_RotCount1	4	1	156	2	4
+42	__turnLeft_7qG2_angle_7qG2_000	3	1	158	2	3
+43	__rotate_OldRotCount1	4	1	160	2	2
+44	__turnLeft_7qG2_startingRotation_7qG2_000	4	1	162	2	2
+45	__moveDown_7qG2_angle_7qG2_000	3	1	164	2	2
+46	__main_7qG2_degreesTurnedOnHouse_7qG2_000	4	1	166	2	4
+47	__bothMotorsAhead_7qG2_angle_7qG2_000	4	1	168	2	2
+48	__turnRight_7qG2_angle_7qG2_000	3	1	170	2	5
+49	__goAhead_7qG2_distance_7qG2_000	3	1	172	2	10
+50	__goBack_7qG2_distance_7qG2_000	3	1	174	2	2
+51	__bothMotorsAhead_7qG2_startingRotation_7qG2_000	4	1	176	2	2
+52	__goAhead_return	1	1	178	1	11
+53	__constVal110	2	0	179	1	1
+54	__constVal96	2	0	180	1	15
+55	__rotate_firstPort1	1	1	181	1	5
+56	__rotate_sync1	1	1	182	1	3
+57	__bothMotorsAhead_return	1	1	183	1	3
+58	__bothMotorsBack_return	1	1	184	1	3
+59	__constVal127	2	0	185	1	5
+60	__constVal63	2	0	186	1	8
+61	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	187	1	4
+62	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	188	1	2
+63	__moveDown_return	1	1	189	1	3
+64	____initialize_global_data_return	1	1	190	1	3
+65	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	191	1	2
+66	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	192	1	2
+67	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	193	1	2
+68	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	194	1	2
+69	__moveUp_return	1	1	195	1	3
+70	__rotate_power1	1	1	196	1	5
+71	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	197	1	4
+72	__goBack_return	1	1	198	1	3
+73	__turnRight_return	1	1	199	1	6
+74	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	200	1	2
+75	__mustStopClaw_return	1	1	201	1	4
+76	__turnLeft_return	1	1	202	1	4
+77	__mustStop_return	1	1	203	1	3
+78	__zfbothMotorsBack	1	1	204	1	5
+79	____RotateMotor1_return	1	1	205	1	4
+80	__zfbothMotorsAhead	1	1	206	1	5
+81	__constVal3	2	0	207	1	11
+82	__constVal1	2	0	208	1	11
+83	__constVal32	2	0	209	1	45
+84	__zfmain	1	1	210	1	18
+85	__constVal0	2	1	211	1	54
+86	__constVal7	2	0	212	1	4
+87	____ReadLSBytes0_return	1	1	213	1	5
+88	__ResetSensorPort	1	1	214	1	4
+89	____ResetSensorSubroutine_return	1	1	215	1	4
+90	__ResetSensorTmp	1	1	216	1	2
+91	__RLSBIterations0	1	1	217	1	4
+92	__constVal2	2	0	218	1	10
+93	__RLSBResult0	2	1	219	1	7
+94	__RLSBytesCount0	1	1	220	1	9
+95	__rotate_theRVP1	1	1	221	1	3
+96	__rotate_theRS1	1	1	222	1	3
+97	__rotate_theRVI1	1	1	223	1	3
+98	__rotate_rs1	1	1	224	1	2
+99	__rotate_theRVD1	1	1	225	1	3
+100	__rotate_turnpct1	2	1	226	1	4
+101	__rotate_stop1	1	1	227	1	3
+102	__rotate_theUF1	1	1	228	1	6
+103	__rotate_theRM1	1	1	229	1	4
+104	__rotate_theOM1	1	1	230	1	7
+105	__rotate_thePower1	2	1	231	1	4
+106	__zfturnLeft	1	1	232	1	5
+107	__rotate_theTurnPct1	2	1	233	1	4
+108	__zfturnRight	1	1	234	1	5
+109	__zfSetSensorLowspeed_inline_SetSensorUltrasonic	1	1	235	1	2
+110	__CLSWArgs0	8	0	4	12	5
+111	__CLSWArgs0.Result	2	1	236	1	5
+112	__CLSWArgs0.Port	1	1	237	1	5
+113	__CLSWArgs0.Buffer	7	0	238	4	5
+114	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+115	__CLSWArgs0.ReturnLen	1	1	240	1	5
+116	__TextOutArgs	8	0	4	16	10
+117	__TextOutArgs.Result	2	1	244	1	10
+118	__TextOutArgs.Location	8	0	2	4	10
+119	__TextOutArgs.Location.X	4	1	248	2	10
+120	__TextOutArgs.Location.Y	4	1	250	2	10
+121	__TextOutArgs.Text	7	0	252	4	10
+122	__TextOutArgs.Text.Text_type	1	0	0	1	0
+123	__TextOutArgs.Options	5	1	256	4	10
+124	__CLSRArgs0	8	0	4	12	5
+125	__CLSRArgs0.Result	2	1	260	1	5
+126	__CLSRArgs0.Port	1	1	261	1	5
+127	__CLSRArgs0.Buffer	7	0	262	4	5
+128	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+129	__CLSRArgs0.BufferLen	1	1	264	1	5
+130	__CLSCSArgs0	8	0	3	4	4
+131	__CLSCSArgs0.Result	2	1	268	1	4
+132	__CLSCSArgs0.Port	1	1	269	1	4
+133	__CLSCSArgs0.BytesReady	1	1	270	1	4
+134	__RLSBbufLSWrite1	7	0	272	4	3
+135	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+136	__constStr0012	7	0	274	4	1
 137	__constStr0012.__constStr0012_type	1	1	0	1	0
-138	__rotate_ports1	7	0	278	4	7
-139	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
-140	__RLSBbufLSWrite1	7	0	280	4	4
-141	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-142	__strbufgoBack	7	0	282	4	2
-143	__strbufgoBack.__strbufgoBack_type	1	0	0	1	0
-144	__OUT_AC	7	0	284	4	13
-145	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-146	__strbufgoAhead	7	0	286	4	2
-147	__strbufgoAhead.__strbufgoAhead_type	1	0	0	1	0
-148	__RLSLastGoodRead0	7	0	288	4	2
-149	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-150	__constStr0011	7	0	290	4	1
-151	__constStr0011.__constStr0011_type	1	1	0	1	0
-152	__RLSReadBuf0	7	0	292	4	14
-153	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+138	__strbufgoBack	7	0	276	4	2
+139	__strbufgoBack.__strbufgoBack_type	1	0	0	1	0
+140	__strbufgoAhead	7	0	278	4	2
+141	__strbufgoAhead.__strbufgoAhead_type	1	0	0	1	0
+142	__OUT_AC	7	0	280	4	12
+143	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+144	__RLSReadBuf0	7	0	282	4	12
+145	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+146	__rotate_ports1	7	0	284	4	7
+147	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+148	__constStr0011	7	0	286	4	1
+149	__constStr0011.__constStr0011_type	1	1	0	1	0
+150	__RLSLastGoodRead0	7	0	288	4	2
+151	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	5	0	#line 5 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
@@ -229,364 +227,262 @@ Clump	Line	PC	Source
 0	10	64		set __main_7qG2_degreesTurnedOnHouse_7qG2_000, 0
 0	9	67	#line 9 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
 0	10	67	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	11	67		set __main_7qG2_degreesTurnedOnSign_7qG2_000, 0
-0	10	70	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	10	67	#line 10 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	67	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	67	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	13	67	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	14	67		set __goAhead_7qG2_distance_7qG2_000, 45
 0	13	70	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	14	70		set __main_7qG2_stopTrying_7qG2_000, 0
-0	13	73	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	13	73	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	14	73		set __goAhead_7qG2_distance_7qG2_000, 45
-0	13	76	#line 13 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	14	70	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	70		subcall goAhead, __goAhead_return
+0	14	72	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	14	72	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	72		getin __signed_stack_001main, __constVal3, 4
 0	14	76	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	15	76		subcall goAhead, __goAhead_return
-0	14	78	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	14	78	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	15	78		getin __signed_stack_001main, __constVal3, 4
-0	14	82	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	14	82	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	15	82		set __D0main, 0
-0	14	85	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	15	85		cmp 4, __zfmain, __signed_stack_001main, __D0main
-0	14	89	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	15	89		mov __D0main, __zfmain
+0	14	76	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	76		set __D0main, 0
+0	14	79	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	79		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	14	83	#line 14 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	15	83		mov __D0main, __zfmain
+0	15	85	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	16	85		brtst 4, __NXC_Label_776, __zfmain
+0	15	88	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	16	88		set __goAhead_7qG2_distance_7qG2_000, 2
 0	15	91	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	16	91		brtst 4, __NXC_Label_776, __zfmain
-0	15	94	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	16	94		set __goAhead_7qG2_distance_7qG2_000, 2
-0	15	97	#line 15 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	16	97	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	17	97		subcall goAhead, __goAhead_return
-0	16	99	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	18	99	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	19	99		jmp __NXC_Label_775
-0	18	101	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	18	101	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	19	101		set __goBack_7qG2_distance_7qG2_000, 5
-0	18	104	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	20	104	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	21	104		subcall goBack, __goBack_return
-0	20	106	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	20	106	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	21	106		set __turnLeft_7qG2_angle_7qG2_000, 80
-0	20	109	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	21	109	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	22	109		subcall turnLeft, __turnLeft_return
-0	21	111	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	21	111	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	22	111		set __moveUp_7qG2_angle_7qG2_000, 60
-0	21	114	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	24	114	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	25	114		subcall moveUp, __moveUp_return
-0	24	116	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	24	116	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	25	116		set __goAhead_7qG2_distance_7qG2_000, 15
-0	24	119	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	27	119	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	28	119		subcall goAhead, __goAhead_return
-0	27	121	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	27	121	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	28	121		set __D0main, 1
+0	16	91	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	17	91		subcall goAhead, __goAhead_return
+0	16	93	#line 16 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	18	93	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	19	93		jmp __NXC_Label_775
+0	18	95	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	18	95	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	19	95		set __goBack_7qG2_distance_7qG2_000, 5
+0	18	98	#line 18 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	20	98	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	21	98		subcall goBack, __goBack_return
+0	20	100	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	20	100	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	21	100		set __turnLeft_7qG2_angle_7qG2_000, 80
+0	20	103	#line 20 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	21	103	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	22	103		subcall turnLeft, __turnLeft_return
+0	21	105	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	21	105	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	22	105		set __moveUp_7qG2_angle_7qG2_000, 60
+0	21	108	#line 21 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	24	108	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	25	108		subcall moveUp, __moveUp_return
+0	24	110	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	24	110	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	25	110		set __goAhead_7qG2_distance_7qG2_000, 15
+0	24	113	#line 24 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	27	113	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	28	113		subcall goAhead, __goAhead_return
+0	27	115	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	27	115	#line 27 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	28	115		set __D0main, 1
+0	28	118	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	118		tst 5, __zfmain, __D0main
+0	28	121	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	121		brtst 4, __NXC_Label_790, __zfmain
 0	28	124	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	124		tst 5, __zfmain, __D0main
-0	28	127	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	127		brtst 4, __NXC_Label_790, __zfmain
-0	28	130	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	130	#pragma macro 26
-0	29	130		acquire __RLSBmutex0
-0	29	131		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	29	133		set __RLSBytesCount0, 1
-0	29	136		wait 15
-0	29	138		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	29	140		index __D0main, __RLSReadBuf0, 65535
-0	29	144		release __RLSBmutex0
-0	9052	145	#line 9052 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	28	145	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	145		mov __signed_stack_001main, __D0main
-0	28	147	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	147		set __D0main, 15
-0	28	150	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	150		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	28	154	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	29	154		mov __D0main, __zfmain
-0	29	156	#line 29 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	30	156		brtst 4, __NXC_Label_795, __zfmain
-0	30	159	#line 30 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	31	159	#pragma macro 7
-0	31	159		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	9066	182	#line 9066 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	30	182	#line 30 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	31	182	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	32	182		jmp __NXC_Label_790
-0	31	184	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	33	184	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	34	184		jmp __NXC_Label_796
-0	33	186	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	34	186		set __goAhead_7qG2_distance_7qG2_000, 4
-0	33	189	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	34	189	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	35	189		subcall goAhead, __goAhead_return
-0	34	191	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	36	191	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	36	191	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	37	191		jmp __NXC_Label_789
-0	36	193	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	36	193	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	37	193		set __D0main, 1
+0	29	124	#pragma macro 26
+0	29	124		acquire __RLSBmutex0
+0	29	125		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	29	127		set __RLSBytesCount0, 1
+0	29	130		wait 15
+0	29	132		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	29	134		index __D0main, __RLSReadBuf0, 65535
+0	29	138		release __RLSBmutex0
+0	9052	139	#line 9052 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	28	139	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	139		mov __signed_stack_001main, __D0main
+0	28	141	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	141		set __D0main, 15
+0	28	144	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	144		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	28	148	#line 28 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	29	148		mov __D0main, __zfmain
+0	29	150	#line 29 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	30	150		brtst 4, __NXC_Label_795, __zfmain
+0	30	153	#line 30 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	31	153	#pragma macro 7
+0	31	153		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	9066	176	#line 9066 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	30	176	#line 30 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	31	176	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	32	176		jmp __NXC_Label_790
+0	31	178	#line 31 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	33	178	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	34	178		jmp __NXC_Label_796
+0	33	180	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	34	180		set __goAhead_7qG2_distance_7qG2_000, 4
+0	33	183	#line 33 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	34	183	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	35	183		subcall goAhead, __goAhead_return
+0	34	185	#line 34 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	36	185	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	36	185	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	37	185		jmp __NXC_Label_789
+0	36	187	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	36	187	#line 36 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	37	187		set __D0main, 1
+0	37	190	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	190		tst 5, __zfmain, __D0main
+0	37	193	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	193		brtst 4, __NXC_Label_800, __zfmain
 0	37	196	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	196		tst 5, __zfmain, __D0main
-0	37	199	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	199		brtst 4, __NXC_Label_800, __zfmain
-0	37	202	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	202	#pragma macro 26
-0	38	202		acquire __RLSBmutex0
-0	38	203		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	38	205		set __RLSBytesCount0, 1
-0	38	208		wait 15
-0	38	210		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	38	212		index __D0main, __RLSReadBuf0, 65535
-0	38	216		release __RLSBmutex0
-0	9099	217	#line 9099 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	37	217	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	217		mov __signed_stack_001main, __D0main
-0	37	219	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	219		set __D0main, 25
-0	37	222	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	222		cmp 1, __zfmain, __signed_stack_001main, __D0main
-0	37	226	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	38	226		mov __D0main, __zfmain
-0	38	228	#line 38 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	39	228		brtst 4, __NXC_Label_805, __zfmain
-0	39	231	#line 39 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	40	231	#pragma macro 7
-0	40	231		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	9113	254	#line 9113 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	39	254	#line 39 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	40	254	#line 40 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	41	254		jmp __NXC_Label_800
-0	40	256	#line 40 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	42	256	#line 42 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	43	256		jmp __NXC_Label_806
-0	43	258	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	43	258	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	44	258		add __main_7qG2_degreesTurnedOnHouse_7qG2_000, __main_7qG2_degreesTurnedOnHouse_7qG2_000, __constVal3
-0	43	262	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	43	262	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	44	262		set __turnRight_7qG2_angle_7qG2_000, 3
-0	43	265	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	44	265	#line 44 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	45	265		subcall turnRight, __turnRight_return
-0	44	267	#line 44 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	48	267	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	48	267	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	49	267		jmp __NXC_Label_799
-0	48	269	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	48	269	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	49	269		set __goAhead_7qG2_distance_7qG2_000, 30
-0	48	272	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	49	272	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	50	272		subcall goAhead, __goAhead_return
-0	49	274	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	49	274	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	50	274		set __turnLeft_7qG2_angle_7qG2_000, 10
-0	49	277	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	52	277	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	53	277		subcall turnLeft, __turnLeft_return
-0	52	279	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	52	279	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	53	279		set __D0main, 1
+0	38	196	#pragma macro 26
+0	38	196		acquire __RLSBmutex0
+0	38	197		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	38	199		set __RLSBytesCount0, 1
+0	38	202		wait 15
+0	38	204		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	38	206		index __D0main, __RLSReadBuf0, 65535
+0	38	210		release __RLSBmutex0
+0	9099	211	#line 9099 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	37	211	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	211		mov __signed_stack_001main, __D0main
+0	37	213	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	213		set __D0main, 25
+0	37	216	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	216		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	37	220	#line 37 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	38	220		mov __D0main, __zfmain
+0	38	222	#line 38 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	39	222		brtst 4, __NXC_Label_805, __zfmain
+0	39	225	#line 39 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	40	225	#pragma macro 7
+0	40	225		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	9113	248	#line 9113 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	39	248	#line 39 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	40	248	#line 40 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	41	248		jmp __NXC_Label_800
+0	40	250	#line 40 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	42	250	#line 42 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	43	250		jmp __NXC_Label_806
+0	43	252	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	43	252	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	44	252		add __main_7qG2_degreesTurnedOnHouse_7qG2_000, __main_7qG2_degreesTurnedOnHouse_7qG2_000, __constVal3
+0	43	256	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	43	256	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	44	256		set __turnRight_7qG2_angle_7qG2_000, 3
+0	43	259	#line 43 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	44	259	#line 44 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	45	259		subcall turnRight, __turnRight_return
+0	44	261	#line 44 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	48	261	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	48	261	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	49	261		jmp __NXC_Label_799
+0	48	263	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	48	263	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	49	263		set __goAhead_7qG2_distance_7qG2_000, 30
+0	48	266	#line 48 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	49	266	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	50	266		subcall goAhead, __goAhead_return
+0	49	268	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	49	268	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	50	268		set __turnLeft_7qG2_angle_7qG2_000, 10
+0	49	271	#line 49 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	52	271	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	53	271		subcall turnLeft, __turnLeft_return
+0	52	273	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	52	273	#line 52 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	53	273		set __D0main, 1
+0	53	276	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	276		tst 5, __zfmain, __D0main
+0	53	279	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	279		brtst 4, __NXC_Label_816, __zfmain
 0	53	282	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	282		tst 5, __zfmain, __D0main
-0	53	285	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	285		brtst 4, __NXC_Label_816, __zfmain
-0	53	288	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	288	#pragma macro 26
-0	54	288		acquire __RLSBmutex0
-0	54	289		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	54	291		set __RLSBytesCount0, 1
-0	54	294		wait 15
-0	54	296		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	54	298		index __D0main, __RLSReadBuf0, 65535
-0	54	302		release __RLSBmutex0
-0	9171	303	#line 9171 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	53	303	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	303		mov __signed_stack_001main, __D0main
-0	53	305	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	305		set __D0main, 10
-0	53	308	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	308		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	53	312	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	54	312		mov __D0main, __zfmain
-0	54	314	#line 54 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	55	314		brtst 4, __NXC_Label_821, __zfmain
-0	55	317	#line 55 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	56	317	#pragma macro 7
-0	56	317		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	9185	340	#line 9185 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	55	340	#line 55 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	56	340	#line 56 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	57	340		jmp __NXC_Label_816
-0	56	342	#line 56 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	58	342	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	59	342		jmp __NXC_Label_822
-0	58	344	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	59	344		set __goAhead_7qG2_distance_7qG2_000, 2
-0	58	347	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	59	347	#line 59 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	60	347		subcall goAhead, __goAhead_return
-0	59	349	#line 59 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	63	349	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	63	349	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	64	349		jmp __NXC_Label_815
-0	63	351	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	63	351	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	64	351		set __moveDown_7qG2_angle_7qG2_000, 60
-0	63	354	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	282	#pragma macro 26
+0	54	282		acquire __RLSBmutex0
+0	54	283		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	54	285		set __RLSBytesCount0, 1
+0	54	288		wait 15
+0	54	290		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	54	292		index __D0main, __RLSReadBuf0, 65535
+0	54	296		release __RLSBmutex0
+0	9171	297	#line 9171 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	53	297	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	297		mov __signed_stack_001main, __D0main
+0	53	299	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	299		set __D0main, 10
+0	53	302	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	302		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	53	306	#line 53 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	54	306		mov __D0main, __zfmain
+0	54	308	#line 54 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	55	308		brtst 4, __NXC_Label_821, __zfmain
+0	55	311	#line 55 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	56	311	#pragma macro 7
+0	56	311		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	9185	334	#line 9185 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	55	334	#line 55 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	56	334	#line 56 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	57	334		jmp __NXC_Label_816
+0	56	336	#line 56 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	58	336	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	59	336		jmp __NXC_Label_822
+0	58	338	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	59	338		set __goAhead_7qG2_distance_7qG2_000, 2
+0	58	341	#line 58 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	59	341	#line 59 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	60	341		subcall goAhead, __goAhead_return
+0	59	343	#line 59 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	63	343	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	63	343	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	64	343		jmp __NXC_Label_815
+0	63	345	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	63	345	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	64	345		set __moveDown_7qG2_angle_7qG2_000, 60
+0	63	348	#line 63 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	66	348	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	67	348		subcall moveDown, __moveDown_return
+0	66	350	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	66	350	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	66	350	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	66	350	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	66	350	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	67	350		sub __turnRight_7qG2_angle_7qG2_000, __constVal110, __main_7qG2_degreesTurnedOnHouse_7qG2_000
 0	66	354	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	67	354		subcall moveDown, __moveDown_return
-0	66	356	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	66	356	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	66	356	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	66	356	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	66	356	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	67	356		sub __turnRight_7qG2_angle_7qG2_000, __constVal110, __main_7qG2_degreesTurnedOnHouse_7qG2_000
-0	66	360	#line 66 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	67	360	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	68	360		subcall turnRight, __turnRight_return
-0	67	362	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	67	362	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	68	362		set __goAhead_7qG2_distance_7qG2_000, 50
-0	67	365	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	68	365	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	69	365		subcall goAhead, __goAhead_return
-0	68	367	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	68	367	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	69	367		set __turnRight_7qG2_angle_7qG2_000, 40
-0	68	370	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	69	370	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	70	370		subcall turnRight, __turnRight_return
-0	69	372	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	69	372	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	70	372		set __goAhead_7qG2_distance_7qG2_000, 48
-0	69	375	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	72	375	#line 72 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	73	375		subcall goAhead, __goAhead_return
-0	72	377	#line 72 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	72	377	#line 72 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	73	377		set __D0main, 1
-0	73	380	#line 73 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	74	380		tst 5, __zfmain, __D0main
-0	73	383	#line 73 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	74	383		brtst 4, __NXC_Label_836, __zfmain
-0	73	386	#line 73 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	74	386		mov __D0main, __main_7qG2_stopTrying_7qG2_000
-0	74	388	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	75	388		tst 5, __zfmain, __D0main
-0	74	391	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	75	391		brtst 4, __NXC_Label_841, __zfmain
-0	75	394	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	76	394		jmp __NXC_Label_836
-0	75	396	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	76	396	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	76	396	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	77	396	#pragma macro 26
-0	77	396		acquire __RLSBmutex0
-0	77	397		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	77	399		set __RLSBytesCount0, 1
-0	77	402		wait 15
-0	77	404		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	77	406		index __D0main, __RLSReadBuf0, 65535
-0	77	410		release __RLSBmutex0
-0	9282	411	#line 9282 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	76	411	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	77	411		mov __signed_stack_001main, __D0main
-0	76	413	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	77	413		set __D0main, 15
-0	76	416	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	77	416		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	76	420	#line 76 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	77	420		mov __D0main, __zfmain
-0	77	422	#line 77 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	78	422		brtst 4, __NXC_Label_844, __zfmain
-0	78	425	#line 78 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	79	425	#pragma macro 7
-0	79	425		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	9296	448	#line 9296 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	78	448	#line 78 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	79	448	#line 79 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	80	448		jmp __NXC_Label_836
-0	79	450	#line 79 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	81	450	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	82	450		jmp __NXC_Label_845
-0	81	452	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	82	452		mov __signed_stack_001main, __main_7qG2_degreesTurnedOnSign_7qG2_000
-0	81	454	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	81	454	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	82	454		set __D0main, 150
-0	81	457	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	82	457		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	81	461	#line 81 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	82	461		mov __D0main, __zfmain
-0	82	463	#line 82 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	83	463		brtst 4, __NXC_Label_848, __zfmain
-0	83	466	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	83	466	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	84	466		add __main_7qG2_degreesTurnedOnSign_7qG2_000, __main_7qG2_degreesTurnedOnSign_7qG2_000, __constVal2
-0	83	470	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	83	470	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	84	470		set __turnLeft_7qG2_angle_7qG2_000, 2
-0	83	473	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	84	473	#line 84 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	85	473		subcall turnLeft, __turnLeft_return
-0	84	475	#line 84 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	90	475	#line 90 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	91	475		jmp __NXC_Label_853
-0	91	477	#line 91 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	92	477		set __main_7qG2_degreesTurnedOnSign_7qG2_000, 0
-0	91	480	#line 91 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	91	480	#line 91 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	92	480	#line 92 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	93	480		set __main_7qG2_stopTrying_7qG2_000, 1
-0	92	483	#line 92 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	92	483	#line 92 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	94	483	#line 94 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	97	483	#line 97 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	97	483	#line 97 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	98	483		jmp __NXC_Label_835
-0	97	485	#line 97 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	97	485	#line 97 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	98	485		set __turnLeft_7qG2_angle_7qG2_000, 10
-0	97	488	#line 97 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	98	488	#line 98 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	99	488		subcall turnLeft, __turnLeft_return
-0	98	490	#line 98 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	98	490	#line 98 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	99	490		set __goAhead_7qG2_distance_7qG2_000, 10
-0	98	493	#line 98 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	99	493	#line 99 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	100	493		subcall goAhead, __goAhead_return
-0	99	495	#line 99 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	99	495	#line 99 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	100	495		set __goBack_7qG2_distance_7qG2_000, 10
-0	99	498	#line 99 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	103	498	#line 103 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	104	498		subcall goBack, __goBack_return
-0	103	500	#line 103 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	103	500	#line 103 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	104	500		set __turnRight_7qG2_angle_7qG2_000, 35
-0	103	503	#line 103 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	104	503	#line 104 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	105	503		subcall turnRight, __turnRight_return
-0	104	505	#line 104 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	104	505	#line 104 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	105	505		set __goAhead_7qG2_distance_7qG2_000, 55
-0	104	508	#line 104 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	107	508	#line 107 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	108	508		subcall goAhead, __goAhead_return
-0	107	510	#line 107 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	109	510	#line 109 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	110	510		subcall mustStop, __mustStop_return
-0	109	512	#line 109 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-0	110	512		exit -1, -1
+0	67	354	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	68	354		subcall turnRight, __turnRight_return
+0	67	356	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	67	356	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	68	356		set __goAhead_7qG2_distance_7qG2_000, 50
+0	67	359	#line 67 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	68	359	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	69	359		subcall goAhead, __goAhead_return
+0	68	361	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	68	361	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	69	361		set __turnRight_7qG2_angle_7qG2_000, 20
+0	68	364	#line 68 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	69	364	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	70	364		subcall turnRight, __turnRight_return
+0	69	366	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	69	366	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	70	366		set __goAhead_7qG2_distance_7qG2_000, 48
+0	69	369	#line 69 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	74	369	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	75	369		subcall goAhead, __goAhead_return
+0	74	371	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	74	371	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	75	371		set __turnRight_7qG2_angle_7qG2_000, 10
+0	74	374	#line 74 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	75	374	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	76	374		subcall turnRight, __turnRight_return
+0	75	376	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	75	376	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	76	376		set __goAhead_7qG2_distance_7qG2_000, 48
+0	75	379	#line 75 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	78	379	#line 78 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	79	379		subcall goAhead, __goAhead_return
+0	78	381	#line 78 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	80	381	#line 80 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	81	381		subcall mustStop, __mustStop_return
+0	80	383	#line 80 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+0	81	383		exit -1, -1
 1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
 1	4530	3		sign __rotate_thePower1, __rotate_angle1
 1	4531	6		abs __rotate_theAngle1, __rotate_angle1
@@ -1016,22 +912,22 @@ Clump	Line	PC	Source
 13	19	31	#line 19 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
 13	22	31	#line 22 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc"
 13	23	31		subret __moveDown_return
-14	112	0	#line 112 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
-14	113	0		subret ____initialize_global_data_return
+14	83	0	#line 83 "C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc"
+14	84	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc
-1	__RotateMotor1	515	NXTDefs.h
-2	__ResetSensorSubroutine	669	NXTDefs.h
-3	__ReadLSBytes0	682	NXTDefs.h
-4	bothMotorsAhead	766	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-5	bothMotorsBack	849	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-6	goAhead	932	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-7	goBack	964	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-8	turnRight	996	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-9	turnLeft	1087	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-10	mustStop	1178	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
-11	mustStopClaw	1203	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
-12	moveUp	1228	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
-13	moveDown	1263	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
-14	__initialize_global_data	1296	C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc
+1	__RotateMotor1	386	NXTDefs.h
+2	__ResetSensorSubroutine	540	NXTDefs.h
+3	__ReadLSBytes0	553	NXTDefs.h
+4	bothMotorsAhead	637	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+5	bothMotorsBack	720	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+6	goAhead	803	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+7	goBack	835	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+8	turnRight	867	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+9	turnLeft	958	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+10	mustStop	1049	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\move.nxc
+11	mustStopClaw	1074	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
+12	moveUp	1099	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
+13	moveDown	1134	C:\Users\simiao\Documents\GitHub\introARobotica\frame\.\claw.nxc
+14	__initialize_global_data	1167	C:\Users\simiao\Documents\GitHub\introARobotica\frame\bigMission.nxc
